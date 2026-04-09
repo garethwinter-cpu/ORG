@@ -570,6 +570,43 @@
     </style>
 </head>
 <body>
+
+<!-- Password Gate -->
+<div id="password-gate" style="position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#6C3FC5 0%,#5a2fa8 100%);display:flex;align-items:center;justify-content:center;z-index:9999;font-family:'Plus Jakarta Sans','Inter',sans-serif;">
+    <div style="background:white;border-radius:16px;padding:48px 40px;box-shadow:0 20px 60px rgba(0,0,0,0.3);text-align:center;max-width:400px;width:90%;">
+        <div style="font-size:32px;margin-bottom:16px;">&#128274;</div>
+        <h2 style="font-size:22px;font-weight:700;color:#333;margin-bottom:8px;">Protected Content</h2>
+        <p style="font-size:14px;color:#888;margin-bottom:24px;">Enter the password to view this page.</p>
+        <input id="pw-input" type="password" placeholder="Password" autofocus
+            style="width:100%;padding:14px 18px;border:2px solid #e0e0e0;border-radius:10px;font-size:16px;font-family:inherit;outline:none;transition:border-color 0.2s;"
+            onfocus="this.style.borderColor='#6C3FC5'" onblur="this.style.borderColor='#e0e0e0'">
+        <p id="pw-error" style="color:#e53935;font-size:13px;margin-top:8px;display:none;">Incorrect password</p>
+        <button onclick="checkPassword()"
+            style="width:100%;margin-top:16px;padding:14px;background:linear-gradient(135deg,#6C3FC5,#5a2fa8);color:white;border:none;border-radius:10px;font-size:16px;font-weight:600;font-family:inherit;cursor:pointer;">
+            Unlock
+        </button>
+    </div>
+</div>
+<script>
+    document.getElementById('password-gate').nextElementSibling;
+    var mainContent = document.querySelector('.container');
+    if(mainContent) mainContent.style.display = 'none';
+    document.getElementById('pw-input').addEventListener('keydown', function(e){ if(e.key==='Enter') checkPassword(); });
+    function checkPassword(){
+        var h='e31f7336ac39dd9a73c36e1769f04dce58eae5ea03db10bb711c60fde8337594';
+        async function sha256(m){var b=new TextEncoder().encode(m);var d=await crypto.subtle.digest('SHA-256',b);return Array.from(new Uint8Array(d)).map(x=>x.toString(16).padStart(2,'0')).join('');}
+        sha256(document.getElementById('pw-input').value).then(function(d){
+            if(d===h){
+                document.getElementById('password-gate').style.display='none';
+                if(mainContent) mainContent.style.display='';
+            } else {
+                document.getElementById('pw-error').style.display='block';
+                document.getElementById('pw-input').style.borderColor='#e53935';
+            }
+        });
+    }
+</script>
+
     <div class="container">
         <header>
             <h1>Mindvalley Creative — Restructure & Job Descriptions</h1>
