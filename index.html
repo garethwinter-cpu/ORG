@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindvalley Creative — Restructure & Job Descriptions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #f0f0f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+            box-shadow: 0 0 40px rgba(0,0,0,0.08);
+        }
+
+        header {
+            background: linear-gradient(135deg, #6C3FC5 0%, #5a2fa8 100%);
+            color: white;
+            padding: 48px 40px 32px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        header .subtitle {
+            font-size: 13px;
+            font-weight: 400;
+            opacity: 0.85;
+            letter-spacing: 0.5px;
+        }
+
+        .tab-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: white;
+            display: flex;
+            padding: 16px 20px;
+            gap: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 18px 20px;
+            border: 2px solid #e0e0e0;
+            background: #fafafa;
+            cursor: pointer;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #777;
+            border-radius: 10px;
+            transition: all 0.25s ease;
+            text-align: center;
+            letter-spacing: 0.2px;
+        }
+
+        .tab-button:hover {
+            background: #f0f0f5;
+            border-color: #ccc;
+            color: #444;
+        }
+
+        .tab-button.active {
+            color: white;
+            font-weight: 700;
+            border-color: transparent;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Colour-code each tab */
+        .tab-button:nth-child(1).active { background: linear-gradient(135deg, #1565c0, #0d47a1); }
+        .tab-button:nth-child(2).active { background: linear-gradient(135deg, #ff9800, #f57c00); }
+        .tab-button:nth-child(3).active { background: linear-gradient(135deg, #6C3FC5, #5a2fa8); }
+        .tab-button:nth-child(4).active { background: linear-gradient(135deg, #00796b, #009688); }
+        .tab-button:nth-child(5).active { background: linear-gradient(135deg, #1565c0, #1e88e5); }
+
+        .tab-content {
+            display: none;
+            padding: 40px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h2 {
+            color: #1A3C5E;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 3px solid #6C3FC5;
+            display: inline-block;
+            padding-left: 0;
+            padding-right: 10px;
+        }
+
+        h3 {
+            color: #1A3C5E;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        h4 {
+            color: #333;
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 18px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        strong {
+            color: #1A3C5E;
+            font-weight: 600;
+        }
+
+        .copy-button {
+            background-color: #6C3FC5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 20px;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+
+        .copy-button:hover {
+            background-color: #5a2fa8;
+            box-shadow: 0 4px 12px rgba(108, 63, 197, 0.3);
+        }
+
+        .copy-button:active {
+            transform: scale(0.98);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+        }
+
+        th {
+            background-color: #6C3FC5;
+            color: white;
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 13px;
+            color: #555;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .card.highlight {
+            border-left: 4px solid #6C3FC5;
+            background: #fafbff;
+        }
+
+        .metric-category {
+            margin-bottom: 30px;
+        }
+
+        /* ORG CHART — VISUAL TREE */
+        .org-chart {
+            margin: 30px 0;
+            padding: 40px 20px;
+            background: linear-gradient(180deg, #f8f9fc 0%, #f0f2f8 100%);
+            border-radius: 12px;
+            text-align: center;
+            overflow-x: auto;
+        }
+        .org-chart h4 {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #999;
+            margin-bottom: 24px;
+        }
+
+        /* Tree connector structure */
+        .tree { display: flex; flex-direction: column; align-items: center; }
+        .tree ul { display: flex; justify-content: center; gap: 0; padding: 0; margin: 0; list-style: none; position: relative; }
+        .tree ul::before { content: ''; position: absolute; top: 0; left: 50%; width: 0; height: 0; }
+        .tree li { display: flex; flex-direction: column; align-items: center; position: relative; padding: 20px 6px 0; }
+
+        /* Vertical line from parent down */
+        .tree li::before { content: ''; position: absolute; top: 0; width: 2px; height: 20px; background: #c4b5e0; }
+        /* Horizontal line connecting siblings */
+        .tree li::after { content: ''; position: absolute; top: 0; width: 50%; height: 2px; background: #c4b5e0; right: 0; }
+        .tree li:last-child::after { width: 50%; right: auto; left: 0; }
+        .tree li:first-child::after { left: 50%; width: 50%; }
+        .tree li:only-child::after { display: none; }
+        .tree li:first-child:last-child::before { height: 20px; }
+
+        /* Horizontal bar across children */
+        .tree > ul > li::after,
+        .tree > ul > li::before { background: #c4b5e0; }
+
+        /* Connector from top node */
+        .tree > .org-box { margin-bottom: 0; }
+        .tree > .connector { width: 2px; height: 24px; background: #c4b5e0; margin: 0 auto; }
+
+        /* Pillar section */
+        .pillar-row { display: flex; justify-content: center; gap: 20px; width: 100%; margin-top: 0; }
+        .pillar-section { flex: 1; max-width: 560px; }
+        .pillar-section.p2 { max-width: 240px; }
+
+        .pillar-header {
+            padding: 8px 20px;
+            border-radius: 8px 8px 0 0;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+        }
+        .pillar-header.blue { background: linear-gradient(135deg, #1565c0, #1e88e5); }
+        .pillar-header.teal { background: linear-gradient(135deg, #00796b, #009688); }
+
+        .pillar-body {
+            border: 2px solid #e0e0e0;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            padding: 16px 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            background: white;
+        }
+
+        /* Org box card */
+        .org-box {
+            border-radius: 10px;
+            padding: 14px 16px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.45;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.15s, box-shadow 0.15s;
+            position: relative;
+        }
+        .org-box:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.13); }
+
+        .org-box.director {
+            background: linear-gradient(135deg, #ede3f7, #f5eefb);
+            border: 2px solid #6C3FC5;
+            min-width: 260px;
+            padding: 18px 24px;
+        }
+        .org-box.blue {
+            background: linear-gradient(135deg, #e8f0fe, #f0f6ff);
+            border: 1.5px solid #90caf9;
+            width: 120px;
+            min-width: 120px;
+        }
+        .org-box.teal {
+            background: linear-gradient(135deg, #e0f5f0, #ecfbf7);
+            border: 1.5px solid #80cbc4;
+            width: 190px;
+        }
+        /* Sub-team member boxes */
+        .org-box.member {
+            background: #fff;
+            border: 1px solid #ddd;
+            width: 140px;
+            min-width: 140px;
+            padding: 10px 12px;
+        }
+        .org-box.member .name { font-size: 11px; font-weight: 600; }
+        .org-box.member .role { font-size: 10px; color: #777; }
+        .org-box.member .outcome { font-size: 9px; }
+        /* Team group container */
+        .team-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            margin-bottom: 16px;
+            width: 100%;
+        }
+        .team-group .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            padding: 10px 8px;
+            background: rgba(0,0,0,0.02);
+            border-radius: 0 0 8px 8px;
+            border: 1px dashed #e0e0e0;
+            border-top: none;
+            width: 100%;
+        }
+        .team-group .org-box.blue,
+        .team-group .org-box.teal {
+            width: auto;
+            min-width: 160px;
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 0;
+        }
+        .team-connector {
+            width: 2px;
+            height: 10px;
+            background: #c4b5e0;
+            margin: 0 auto;
+        }
+        .org-box.warm {
+            background: linear-gradient(135deg, #fff8e8, #fff3d6);
+            border: 1.5px solid #ffcc80;
+            width: 120px;
+            min-width: 120px;
+        }
+        .org-box.gray-before {
+            background: #f5f5f5;
+            border: 1.5px solid #bdbdbd;
+        }
+
+        .org-box .name {
+            font-weight: 700;
+            font-size: 13px;
+            color: #1A3C5E;
+            margin-bottom: 3px;
+        }
+        .org-box .role {
+            font-size: 11px;
+            color: #555;
+            margin-bottom: 6px;
+        }
+        .org-box .outcome {
+            font-size: 10px;
+            font-style: italic;
+            color: #6C3FC5;
+            background: rgba(108,63,197,0.08);
+            border-radius: 4px;
+            padding: 3px 8px;
+            display: inline-block;
+            margin-top: 4px;
+        }
+        .org-box .team-list {
+            font-size: 10px;
+            color: #777;
+            margin-top: 8px;
+            line-height: 1.4;
+            border-top: 1px dashed #ddd;
+            padding-top: 6px;
+        }
+        .org-box .badge {
+            display: inline-block;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-top: 4px;
+        }
+        .badge.elevated { background: #fff3e0; color: #e65100; }
+        .badge.promoted { background: #e8f5e9; color: #2e7d32; }
+        .badge.rescoped { background: #fce4ec; color: #c62828; }
+        .badge.new { background: #e0f2f1; color: #00695c; }
+        .badge.contractor { background: #f3e5f5; color: #7b1fa2; }
+
+        /* Before chart specific */
+        .before-tree { display: flex; flex-direction: column; gap: 8px; text-align: left; padding: 20px; }
+        .before-node { display: flex; align-items: flex-start; gap: 10px; padding: 8px 12px; border-radius: 6px; font-size: 12px; }
+        .before-node.level-0 { background: #ede3f7; border-left: 3px solid #6C3FC5; margin-left: 0; }
+        .before-node.level-1 { background: #f5f5f5; border-left: 3px solid #bbb; margin-left: 24px; }
+        .before-node.level-2 { background: #fafafa; border-left: 3px solid #ddd; margin-left: 48px; }
+        .before-node.level-3 { background: #fff; border-left: 3px solid #eee; margin-left: 72px; }
+        .before-node .node-name { font-weight: 700; color: #1A3C5E; white-space: nowrap; }
+        .before-node .node-role { color: #666; }
+        .before-node .node-tag { font-size: 10px; background: #fff3e0; color: #e65100; padding: 1px 6px; border-radius: 3px; margin-left: 6px; white-space: nowrap; }
+        .before-external { margin-top: 16px; padding-top: 16px; border-top: 2px dashed #e0e0e0; }
+
+        /* Legacy compat — hide old styles if needed */
+        .org-node, .org-level, .org-team, .pillar-label { /* overridden by new styles */ }
+
+        .outcome-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .outcome-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid #6C3FC5;
+            padding: 16px;
+            border-radius: 6px;
+        }
+
+        .outcome-card strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #1A3C5E;
+        }
+
+        .risk-mitigation {
+            margin-bottom: 20px;
+            padding: 16px;
+            background: #fff5e1;
+            border-left: 4px solid #ffa500;
+            border-radius: 4px;
+        }
+
+        .risk-mitigation strong {
+            color: #f57f17;
+        }
+
+        .section-divider {
+            margin: 40px 0;
+            border-top: 2px solid #e0e0e0;
+            padding-top: 20px;
+        }
+
+        .content-wrapper {
+            max-width: 100%;
+        }
+
+        .copy-status {
+            display: inline-block;
+            margin-left: 10px;
+            padding: 6px 12px;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 4px;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .copy-status.show {
+            opacity: 1;
+        }
+
+        .metric-rating {
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 12px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .tab-bar {
+                flex-wrap: wrap;
+                padding: 10px;
+                gap: 8px;
+            }
+
+            .tab-button {
+                flex-basis: calc(50% - 8px);
+                padding: 14px 12px;
+                font-size: 12px;
+            }
+
+            .tab-content {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            .org-team {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            td, th {
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mindvalley Creative — Restructure & Job Descriptions</h1>
+            <div class="subtitle">Gareth Winter | 1 April 2026 | Draft for Dario Bianchi (CPO)</div>
+        </header>
+
+        <div class="tab-bar">
+            <button class="tab-button active" onclick="showTab(0)">Team ORG Structure</button>
+            <button class="tab-button" onclick="showTab(1)">Gareth JD (Current)</button>
+            <button class="tab-button" onclick="showTab(2)">Gareth JD (Proposed)</button>
+            <button class="tab-button" onclick="showTab(3)">Learning Experience Pillar</button>
+            <button class="tab-button" onclick="showTab(4)">Matt Wong JD</button>
+        </div>
+
+        <!-- TAB 3: TEAM ORG STRUCTURE -->
+        <div id="tab0" class="tab-content active">
+            <div class="content-wrapper">
+                <button class="copy-button" onclick="copyTabContent(0)">Copy to Clipboard</button>
+                <span class="copy-status" id="copy-status-0">Copied!</span>
+
+                <h2>Team ORG Structure — Mindvalley Creative</h2>
+
+                <p><strong>Author:</strong> Gareth Winter, Creative Director</p>
+                <p><strong>Date:</strong> April 2026</p>
+                <p><strong>Status:</strong> Draft for discussion</p>
+
+                <div style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); border: 2px solid #1565c0; border-radius: 10px; padding: 16px 20px; margin: 24px 0;">
+                    <strong style="color: #1565c0; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Creative Services Unification</strong>
+                    <p style="margin: 8px 0 0; color: #333; font-size: 14px;">This structure consolidates all creative production — customer-facing content, marketing and ad assets, learning experience design, and creative operations — into a single creative function. One team, one creative standard, one leader.</p>
+                </div>
+
+                <h3>Overview</h3>
+                <p>Creative talent at Mindvalley — content production, marketing assets, learning experience design, and operations — is currently spread across multiple functions with inconsistent standards, competing priorities, and no single creative leader accountable for output quality. This structure consolidates that talent into one creative function with clear discipline separation and unified creative direction:</p>
+                <ul>
+                    <li><strong>Khairul Johari —</strong> Film Production (capture + AI-gen)</li>
+                    <li><strong>Jia Wen Liu —</strong> Post-Production (long-form and short-form content output quality)</li>
+                    <li><strong>Titus Thana Raj —</strong> Marketing Production (organic + paid editing)</li>
+                    <li><strong>Jason Roper —</strong> Creative Excellence (direct to Gareth — special projects, quality standards)</li>
+                    <li><strong>Matt Wong —</strong> Creative Operations (governance, capacity, vendor strategy)</li>
+                    <li><strong>Fran Facio Crespo —</strong> Learning Experience & Transformation Design</li>
+                </ul>
+                <p>Every creative function — from customer-facing content and marketing assets to learning experience design and creative operations — sits under one creative leader with one set of standards, shared tooling, and a single point of accountability for output quality.</p>
+
+                <h3>Why This Structure</h3>
+                <ul>
+                    <li><strong>Creative unity:</strong> All creative production — customer-facing content, marketing and ad assets, learning experience design — operates under one creative function with shared standards, shared tools, and one creative director setting the bar.</li>
+                    <li><strong>Talent consolidation:</strong> Creative resources currently distributed across multiple functions are brought together into a single team purpose-built for content production, marketing assets, and learning experience design — eliminating duplication, inconsistency, and competing priorities.</li>
+                    <li><strong>Clean discipline separation:</strong> Khairul owns production (capture + AI-gen). Jia Wen owns post-production (long-form and short-form output). Titus owns marketing production (social + paid editing). No overlap, no ambiguity.</li>
+                    <li><strong>Flex capacity & talent development:</strong> With all creative talent under one roof, Gareth can flex resources across priorities — a social editor can support a Quest launch, a VSL editor can cut a campaign asset, an LX designer can support curriculum across formats. Creative Ops (Matt) manages this holistically. Beyond resourcing, a unified function creates real growth pathways: team members collaborate across disciplines, learn from each other's craft, and develop broader creative skill sets. Instead of siloed teams with limited exposure, talent grows inside a single creative culture with mentorship, cross-pollination, and a clear ladder.</li>
+                    <li><strong>Quality consistency:</strong> Jason Roper reports directly to Gareth as a creative excellence resource — setting and lifting the quality standard across all output, available for high-priority assets and special projects.</li>
+                </ul>
+
+                <h3>ORG Structure</h3>
+                <div class="org-chart">
+                    <!-- DIRECTOR -->
+                    <div class="org-box director">
+                        <div class="name">Gareth Winter</div>
+                        <div class="role">Creative Director, Content & Transformation Design</div>
+                        <div class="outcome">Vision, creative standards & strategy</div>
+                        <div style="font-size: 10px; color: #666; margin-top: 4px;">7 direct reports · ~22 total · outcome-led</div>
+                    </div>
+                    <div class="connector" style="width: 2px; height: 24px; background: #c4b5e0; margin: 0 auto;"></div>
+
+                    <div class="pillar-row">
+                        <!-- PILLAR 1: CONTENT ENGINE -->
+                        <div class="pillar-section" style="max-width: 720px;">
+                            <div class="pillar-header blue">Pillar 1: Content Engine</div>
+                            <div class="pillar-body" style="flex-direction: column; align-items: stretch;">
+
+                                <!-- KHAIRUL JOHARI + TEAM -->
+                                <div class="team-group">
+                                    <div class="org-box blue" style="width: 100%; border-radius: 10px 10px 0 0;">
+                                        <div class="name">Khairul Johari</div>
+                                        <div class="role">Head of Film Production</div>
+                                        <div class="outcome">Capture excellence + AI-gen</div>
+                                    </div>
+                                    <div class="team-members">
+                                        <div class="org-box member">
+                                            <div class="name">Paul Hanna</div>
+                                            <div class="role">Videographer</div>
+                                            <div class="outcome">On-set capture & camera ops</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Kuhan Kunasegaran</div>
+                                            <div class="role">Videographer</div>
+                                            <div class="outcome">On-set capture & camera ops</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Charuk Ong Chiang</div>
+                                            <div class="role">Videographer</div>
+                                            <div class="outcome">On-set capture & camera ops</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Nadir Salam</div>
+                                            <div class="role">Videographer</div>
+                                            <div class="outcome">On-set capture & camera ops</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Leonardo Govoni</div>
+                                            <div class="role">Videographer</div>
+                                            <span class="badge contractor">contractor</span>
+                                            <div class="outcome">On-set capture & camera ops</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- JIA WEN LIU + TEAM -->
+                                <div class="team-group">
+                                    <div class="org-box blue" style="width: 100%; border-radius: 10px 10px 0 0;">
+                                        <div class="name">Jia Wen Liu</div>
+                                        <div class="role">Post-Production Lead</div>
+                                        <span class="badge elevated">elevated</span>
+                                        <div class="outcome">Long-form & short-form output quality</div>
+                                    </div>
+                                    <div class="team-members">
+                                        <div class="org-box member">
+                                            <div class="name">Mildred Michael</div>
+                                            <div class="role">Video Editor</div>
+                                            <div class="outcome">Long-form & short-form editing</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Shan P Purana Vellu</div>
+                                            <div class="role">Video Editor</div>
+                                            <div class="outcome">Long-form & short-form editing</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TITUS THANA RAJ + TEAM -->
+                                <div class="team-group">
+                                    <div class="org-box blue" style="width: 100%; border-radius: 10px 10px 0 0;">
+                                        <div class="name">Titus Thana Raj</div>
+                                        <div class="role">Marketing Production Lead</div>
+                                        <span class="badge new">new to creative</span>
+                                        <div class="outcome">Marketing content quality & throughput</div>
+                                    </div>
+                                    <div class="team-members">
+                                        <div class="org-box member">
+                                            <div class="name">Yuthika Peiris</div>
+                                            <div class="role">Senior Video Editor I</div>
+                                            <div class="outcome">Social & organic video editing</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Miguel Angel Vazquez Alva</div>
+                                            <div class="role">Senior Video Content Producer</div>
+                                            <div class="outcome">Marketing video production</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Marwah Al-Attraqchi</div>
+                                            <div class="role">Video Editor</div>
+                                            <div class="outcome">VSL & paid ad editing</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Shan K. Palanival</div>
+                                            <div class="role">Video Editor</div>
+                                            <div class="outcome">VSL & paid ad editing</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- STANDALONE: JASON ROPER -->
+                                <div class="org-box blue" style="width: auto; min-width: 220px; margin: 0 auto;">
+                                    <div class="name">Jason Roper</div>
+                                    <div class="role">Video Editor — Creative Excellence</div>
+                                    <span class="badge" style="background:#e8f5e9;color:#2e7d32;">direct to gareth</span>
+                                    <div class="outcome">Creative quality standard & special projects</div>
+                                </div>
+
+                                <!-- STANDALONE: MATT WONG -->
+                                <div class="org-box blue" style="width: auto; min-width: 220px; margin: 0 auto;">
+                                    <div class="name">Matt Wong</div>
+                                    <div class="role">Senior Creative Operations Specialist (B3)</div>
+                                    <span class="badge promoted">promoted</span>
+                                    <div class="outcome">Governance, capacity planning & vendor strategy</div>
+                                </div>
+
+                                <!-- DEPARTING: HASSAAN -->
+                                <div class="org-box" style="background: #f5f5f5; border: 1.5px dashed #bbb; width: auto; min-width: 180px; margin: 0 auto;">
+                                    <div class="name" style="color: #999;">Hassaan Islam</div>
+                                    <div class="role" style="color: #bbb;">Creative Production & Content Ops</div>
+                                    <span class="badge" style="background:#ffebee;color:#c62828;">departing</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PILLAR 2: LEARNING EXPERIENCE -->
+                        <div class="pillar-section" style="max-width: 340px;">
+                            <div class="pillar-header teal">Pillar 2: Learning Experience</div>
+                            <div class="pillar-body" style="flex-direction: column; align-items: stretch;">
+
+                                <!-- FRAN FACIO CRESPO + TEAM -->
+                                <div class="team-group">
+                                    <div class="org-box teal" style="width: 100%; border-radius: 10px 10px 0 0;">
+                                        <div class="name">Fran Facio Crespo</div>
+                                        <div class="role">Senior Learning Experience Designer</div>
+                                        <span class="badge new">new to creative</span>
+                                        <div class="outcome">How users transform</div>
+                                    </div>
+                                    <div class="team-members">
+                                        <div class="org-box member">
+                                            <div class="name">Celia Oviedo Guzman</div>
+                                            <div class="role">Learning Experience Designer</div>
+                                            <div class="outcome">LX design & programme structure</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Aarti Mehta-Nayyar</div>
+                                            <div class="role">Learning Experience Designer</div>
+                                            <div class="outcome">LX design & coaching integration</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Elisa Tidswell</div>
+                                            <div class="role">Learning Experience Designer</div>
+                                            <div class="outcome">LX design & transformation quality</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Outcome Ownership Map</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Outcome</th>
+                            <th>Owner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Capture quality + AI-gen (film production)</td>
+                            <td>Khairul Johari</td>
+                        </tr>
+                        <tr>
+                            <td>Long-form & short-form output quality (post-production)</td>
+                            <td>Jia Wen Liu</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing content quality & throughput (organic + paid)</td>
+                            <td>Titus Thana Raj</td>
+                        </tr>
+                        <tr>
+                            <td>Creative quality standard & special projects</td>
+                            <td>Jason Roper</td>
+                        </tr>
+                        <tr>
+                            <td>Operational scale, governance & throughput</td>
+                            <td>Matt Wong</td>
+                        </tr>
+                        <tr>
+                            <td>Transformation journey & learning experience</td>
+                            <td>Fran Facio Crespo</td>
+                        </tr>
+                        <tr>
+                            <td>Vision, creative standards & strategy</td>
+                            <td>Gareth Winter</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Creative Leadership Succession</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Priority</th>
+                            <th>Role</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Creative Director</td><td>Gareth Winter</td></tr>
+                        <tr><td>2</td><td>Deputy (Film & Production)</td><td>Khairul Johari</td></tr>
+                        <tr><td>3</td><td>Deputy (Post-Production & Output)</td><td>Jia Wen Liu</td></tr>
+                        <tr><td>4</td><td>Deputy (Marketing Production)</td><td>Titus Thana Raj</td></tr>
+                        <tr><td>5</td><td>Deputy (Operations & Systems)</td><td>Matt Wong</td></tr>
+                    </tbody>
+                </table>
+
+                <h3>People Changes</h3>
+
+                <div class="card highlight">
+                    <h4>Titus Thana Raj — Moved Under Gareth</h4>
+                    <ul>
+                        <li><strong>Previous:</strong> VSL Editing Team Manager, reporting into Marketing (under Dan Savov's org)</li>
+                        <li><strong>New:</strong> Marketing Production Lead, reporting to Gareth</li>
+                        <li><strong>Why:</strong> Consolidates all creative production under one function. Titus already leads paid/VSL editing; now expands to cover organic and social editing too. Clean separation: Khairul owns capture, Jia Wen owns post, Titus owns marketing production.</li>
+                        <li><strong>Team:</strong> Yuthika Peiris, Miguel Angel Vazquez Alva, Marwah Al-Attraqchi, Shan K. Palanival</li>
+                    </ul>
+                </div>
+
+                <div class="card highlight">
+                    <h4>Jason Roper — Direct Report to Gareth</h4>
+                    <ul>
+                        <li><strong>Previous:</strong> Video Editor, reporting to Will Paddison (Head of Organic Marketing)</li>
+                        <li><strong>New:</strong> Video Editor — Creative Excellence, reporting directly to Gareth</li>
+                        <li><strong>Why:</strong> Jason is an exceptional creative talent. Reporting directly to Gareth, he operates as a creative quality resource — available for special projects, high-priority assets, and lifting the standard of creative output across the entire function. Not a manager; a craftsperson with direct access to the creative director.</li>
+                        <li><strong>Direct Reports:</strong> None.</li>
+                    </ul>
+                </div>
+
+                <div class="card highlight">
+                    <h4>Yuthika Peiris — Moved Under Titus</h4>
+                    <ul>
+                        <li><strong>Previous:</strong> Senior Video Editor I, reporting to Will Paddison</li>
+                        <li><strong>New:</strong> Senior Video Editor I, reporting to Titus Thana Raj</li>
+                        <li><strong>Why:</strong> Will is exiting. Yuthika's social/organic editing work fits naturally under Titus's expanded marketing production remit.</li>
+                    </ul>
+                </div>
+
+                <div class="card highlight">
+                    <h4>Miguel Angel Vazquez Alva — Moved Under Titus</h4>
+                    <ul>
+                        <li><strong>Previous:</strong> Senior Video Content Producer, reporting to Will Paddison</li>
+                        <li><strong>New:</strong> Senior Video Content Producer, reporting to Titus Thana Raj</li>
+                        <li><strong>Why:</strong> Marketing content production consolidated under one lead.</li>
+                    </ul>
+                </div>
+
+                <div class="card highlight">
+                    <h4>Hassaan Islam — Departing</h4>
+                    <ul>
+                        <li><strong>Previous:</strong> Creative Production & Content Ops</li>
+                        <li><strong>Status:</strong> Exiting the business. Responsibilities to be redistributed across the wider team.</li>
+                    </ul>
+                </div>
+
+                <h3>Risks & Mitigations</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 22%;">Risk</th>
+                            <th style="width: 40%;">Detail</th>
+                            <th style="width: 38%;">Mitigation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Creative Director availability</strong></td>
+                            <td>Gareth is the sole director-level leader across ~22 people and two pillars. If pulled into cross-functional or executive work, day-to-day creative leadership could thin out.</td>
+                            <td>Situational deputising: Jason Roper covers creative quality decisions; Khairul Johari covers production operations. Both have direct access to Gareth and can escalate. Matt Wong holds operational continuity through dashboards and process governance.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>LX team depth vs. expanded mandate</strong></td>
+                            <td>Fran's team is 3 people. As the LX mandate expands beyond Mastery to cover Quests, Certifications, meditations, premium programmes, and webinars, the current headcount may not sustain the scope.</td>
+                            <td>Acknowledged as a future investment. Phase 1 focuses on integrating the existing team and proving the model. A hire request will follow once the expanded scope is live and workload data confirms the gap.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Marketing Production cultural integration</strong></td>
+                            <td>Titus's team comes from a performance-marketing environment (conversion, ROAS, speed). The creative function prioritises craft, quality, and brand consistency. Different instincts could create friction.</td>
+                            <td>This is seen as additive, not adversarial. Titus brings a commercial lens that strengthens the creative function's relevance to business outcomes. Shared creative standards, tooling, and regular cross-team reviews will align the culture over time. Jason's creative excellence remit helps set the bar across all output.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ops capacity as org scales</strong></td>
+                            <td>Matt Wong is a single B3 ops specialist covering governance, capacity planning, vendor strategy, and dashboards for the full ~22-person org. No direct reports, no backup.</td>
+                            <td>Matt is leveraging AI tooling to multiply his throughput. Gareth will monitor workload and escalate for additional ops support if the function grows beyond current scope. The AI-gen capability across the company also reduces manual ops burden.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Contractor dependency (Film Production)</strong></td>
+                            <td>One of Khairul's five team members (Leonardo Govoni) is a contractor. If the contract ends, film production capacity drops by 20%.</td>
+                            <td>Khairul maintains a vetted freelancer bench for surge and cover. The flex-capacity model across the unified function means other editors can temporarily support shoots if needed.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Social content strategy ownership</strong></td>
+                            <td>This org owns the production and editing of marketing content, but the social strategy layer — what gets made, why, and for whom — sits in Marketing. If Marketing's social strategy function is under-resourced or misaligned, the creative team executes without clear direction.</td>
+                            <td>Clear boundary: Marketing owns social strategy; Creative owns execution quality and throughput. Titus is the interface point. Regular planning syncs between Titus and Marketing stakeholders ensure briefs are aligned before production begins. This is a Marketing function gap to solve, not a Creative one.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Knowledge concentration risk</strong></td>
+                            <td>Several roles are single-person functions: Jason (creative excellence), Matt (operations), Fran (LX leadership). Losing any one of them creates a significant capability gap.</td>
+                            <td>All key roles have documented DNAs, ensuring knowledge is preserved and transferable. The succession table identifies backfill priorities, and the unified structure enables cross-training so adjacent leaders can cover short-term gaps.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Headcount Summary</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Leader</th>
+                            <th>Direct Reports</th>
+                            <th>Total Team Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Gareth Winter</td><td>7</td><td>~22 (including all nested reports)</td></tr>
+                        <tr><td>Khairul Johari</td><td>4 + 1 contractor</td><td>5 (film production)</td></tr>
+                        <tr><td>Jia Wen Liu</td><td>2</td><td>2 (post-production)</td></tr>
+                        <tr><td>Titus Thana Raj</td><td>4</td><td>4 (marketing production — organic + paid)</td></tr>
+                        <tr><td>Jason Roper</td><td>0</td><td>0 (creative excellence, direct to Gareth)</td></tr>
+                        <tr><td>Matt Wong</td><td>0</td><td>0 (B3, creative operations)</td></tr>
+                        <tr><td>Hassaan Islam</td><td>0</td><td>0 (departing)</td></tr>
+                        <tr><td>Fran Facio Crespo</td><td>3</td><td>3 (LX & coaching)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- TAB 0: GARETH WINTER JD — CURRENT (without Pillar 2) -->
+        <div id="tab1" class="tab-content">
+            <div class="content-wrapper">
+                <button class="copy-button" onclick="copyTabContent(1)">Copy to Clipboard</button>
+                <span class="copy-status" id="copy-status-1">Copied!</span>
+
+                <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2); border: 2px solid #ff9800; border-radius: 10px; padding: 16px 20px; margin-bottom: 24px;">
+                    <strong style="color: #e65100; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Current State</strong>
+                    <p style="margin: 8px 0 0; color: #333; font-size: 14px;">This is Gareth's job description as it stands today. If the proposed restructure is approved, compare with the <em>Proposed + LX</em> tab to see how the scope would expand.</p>
+                </div>
+
+                <h2>Creative Director – Mindvalley Content</h2>
+
+                <h3>Role Mission</h3>
+                <p>Lead the creative vision, production, and strategic impact of Mindvalley's content ecosystem — Quests, meditations, premium products, short-form content, and campaign assets. Partner with the CEO, CPO, CGO, MDM, and senior leadership to ensure every piece of content drives engagement, transformation, and growth.</p>
+
+                <p>Architect a content strategy that blends storytelling, product thinking, and AI-native workflows into a single system — moving Mindvalley from launch-driven content cycles to an always-on engine built for deep engagement, habit formation, and long-term retention.</p>
+
+                <p>Own the full creative pipeline end to end: from author scouting and curriculum design through on-set direction, post-production, and campaign delivery.</p>
+
+                <p>Operate as the creative bridge between Content, Product, and Marketing, ensuring these functions work as one system. Bring creative leadership grounded in data and commercial accountability.</p>
+
+                <h3>Key Expected Outcomes</h3>
+                <ul>
+                    <li><strong>Strategic Content Leadership:</strong> Clear content roadmap aligned to Pathways, with investment criteria for new programmes and lifecycle plans for existing ones.</li>
+                    <li><strong>High-Performing Creative Team:</strong> Leaders are coached, accountable, and delivering measurable improvements to content quality and production throughput.</li>
+                    <li><strong>Customer Impact & Engagement:</strong> Content experiences consistently raise completion, re-engagement, and retention through data-informed curation and personalised pathways.</li>
+                    <li><strong>Data-Driven & AI-Driven Decision Making:</strong> Content priorities guided by consumption analytics, AI-powered pattern recognition, and customer feedback — with post-launch measurement feeding back into the next cycle.</li>
+                    <li><strong>AI-Enhanced Creative Engine:</strong> AI tools and AI-powered workflows embedded across scriptwriting, campaign generation, and production planning — reducing cycle times and cost per production.</li>
+                    <li><strong>Cross-Functional Alignment:</strong> Stakeholder consensus on content strategy with smooth delivery across Product, Marketing, and Leadership teams.</li>
+                    <li><strong>Business & Financial Accountability:</strong> Own and improve key content portfolio metrics (LTV, retention, content-attributed revenue, ROAS), ensuring production investments deliver strong ROI and support sustainable business growth.</li>
+                </ul>
+
+                <h3>Core Responsibilities</h3>
+                <ul>
+                    <li><strong>Set Content & Programme Strategy:</strong> Partner with the CPO and senior leadership to define the strategic direction for Mindvalley's content portfolio and translate it into annual roadmaps and quarterly OKRs with clear investment rationale.</li>
+                    <li><strong>Own Financial Levers:</strong> Align content priorities with business outcomes, building investment cases before greenlighting productions and benchmarking spend against ROAS, LTV, and content-attributed revenue.</li>
+                    <li><strong>Lead & Develop Team:</strong> Lead a cross-functional team spanning Film Production, Post-Production, Creative Operations, Design, Product Design, Marketing, and Content Coordination. Set clear and ambitious quarterly OKRs, run structured reviews, and build promotion pathways.</li>
+                    <li><strong>Own the Content Lifecycle:</strong> Guide programmes from author scouting through curriculum design, on-set creative direction, post-production, campaign distribution, and performance review — ensuring every stage has clear ownership, quality standards, and timelines.</li>
+                    <li><strong>Drive Data & AI-Led Decisions:</strong> Use consumption analytics, behavioural data, AI-powered discovery, and customer feedback to prioritise what to commission, relaunch, or retire. Build scoring frameworks that make decision-making repeatable.</li>
+                    <li><strong>Embed AI Across Creative Operations:</strong> Deploy AI systems across the creative pipeline — from scriptwriting to campaign generation and gen-AI filmmaking. Build reusable tools the team can operate independently. Partner with engineering to shape platform-level AI capabilities.</li>
+                    <li><strong>Set & Protect Creative Standards:</strong> Own the storytelling quality, emotional resonance, and brand integrity of everything the content team produces. Direct on set. Review edits. Ensure Mindvalley's content looks, sounds, and feels like the category leader it aspires to be.</li>
+                    <li><strong>Cross-Functional Delivery:</strong> Operate as the connective layer between Content, Product, Marketing, and Leadership — bringing content insight upstream into strategic conversations and converging on unified plans with clear scope and ownership.</li>
+                </ul>
+
+                <h3>Technical & Industry Skills</h3>
+                <ul>
+                    <li>Proven ability to set creative vision and translate it into portfolio-level strategy, annual roadmaps, and quarterly execution across multiple formats and channels.</li>
+                    <li>Expertise in storytelling, scriptwriting, and narrative craft — shaping author stories into structured, emotionally compelling learning experiences.</li>
+                    <li>On-set creative direction — directing authors, presenters, and production teams under live production pressure.</li>
+                    <li>Strong command of subscription and retention mechanics within digital membership models.</li>
+                    <li>Skilled in building and deploying AI-native creative systems across the production pipeline.</li>
+                    <li>Commercial and data fluency — connecting creative decisions to business metrics, building investment cases, and reading consumption analytics.</li>
+                    <li>Experience in brand building, positioning, and evolving established brands into new categories.</li>
+                </ul>
+
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li><strong>Creative Judgement:</strong> Ability to assess content quality across scripts, edits, and campaigns — setting and holding the bar without micromanaging execution.</li>
+                    <li><strong>Strategic Influence:</strong> Gains alignment from senior leadership through evidence-backed cases and clear storytelling. Comfortable presenting to founders and C-suite.</li>
+                    <li><strong>Translation Between Creative & Commercial:</strong> Speaks fluently to both storytellers and commercial leaders. Turns data into briefs and creative ambition into business cases.</li>
+                    <li><strong>Resilience Under Ambiguity:</strong> Absorbs strategic redirects, competing priorities, and shifting timelines without losing momentum. Re-architects plans quickly when the landscape changes.</li>
+                    <li><strong>People Development:</strong> Builds individuals, not just teams. Identifies potential, coaches through honest feedback, and invests in growth.</li>
+                    <li><strong>Technical Curiosity:</strong> Learns by building. Picks up new tools and platforms on real problems. Leads AI adoption with credibility, not just enthusiasm.</li>
+                </ul>
+
+                <h3>Performance Metrics</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Outcome</th>
+                            <th>Not Met</th>
+                            <th>Almost There</th>
+                            <th>On Track</th>
+                            <th>Over & Above</th>
+                            <th>Smashed It</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Strategic Content Leadership</strong></td>
+                            <td>No clear content strategy; reactive commissioning.</td>
+                            <td>Partial roadmap, lacking commercial rationale or Pathways alignment.</td>
+                            <td>Clear roadmap aligned to Pathways with investment criteria and lifecycle plans.</td>
+                            <td>Roadmap includes scored author pipeline, projected returns, and relaunch calendar with measurable KPIs.</td>
+                            <td>Content strategy directly shapes company OKRs and competitive positioning. Leadership references it as the growth blueprint.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>High-Performing Creative Team</strong></td>
+                            <td>Low engagement and unclear objectives.</td>
+                            <td>Goals set but inconsistently tracked; feedback ad hoc.</td>
+                            <td>Team delivering on quarterly OKRs with healthy morale. Structured reviews and promotion pathways in place.</td>
+                            <td>Team exceeds key targets; individuals visibly growing into bigger roles.</td>
+                            <td>Team recognised internally as a benchmark for performance culture. Other departments adopt the model.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Customer Impact & Engagement</strong></td>
+                            <td>No measurable impact on completion, engagement, or retention.</td>
+                            <td>Minor gains, not sustained.</td>
+                            <td>Sustained improvement in completion, re-engagement, and pathway progression.</td>
+                            <td>Gains directly linked to retention improvement and revenue growth.</td>
+                            <td>Content cited as a primary driver of membership retention and LTV.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data-Driven & AI-Driven Decision Making</strong></td>
+                            <td>Roadmap based on intuition only.</td>
+                            <td>Some data used, but AI and customer feedback not leveraged.</td>
+                            <td>All priorities backed by data, AI insights, and customer feedback. Post-launch measurement feeds back into next cycle.</td>
+                            <td>Predictive analytics and AI models actively inform roadmaps.</td>
+                            <td>AI and customer-driven decision-making replicated in other parts of the company.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI-Enhanced Creative Engine</strong></td>
+                            <td>No AI tools adopted; manual workflows remain.</td>
+                            <td>Pilots started but benefits unclear.</td>
+                            <td>AI workflows embedded across scriptwriting, campaign generation, and production planning. Measurable efficiency gains.</td>
+                            <td>AI systems embedded across team; no single-person dependency. Partnership with engineering shaping platform capabilities.</td>
+                            <td>AI-driven approach becomes company benchmark; significant efficiency savings achieved.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cross-Functional Alignment</strong></td>
+                            <td>Frequent misalignment delays launches.</td>
+                            <td>Occasional miscommunication; content consulted late.</td>
+                            <td>Content strategy shaped alongside product and commercial roadmaps. Smooth hand-offs across teams.</td>
+                            <td>Stakeholders proactively align before roadmap changes.</td>
+                            <td>Model becomes gold standard across Mindvalley.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Business & Financial Accountability</strong></td>
+                            <td>No connection between production investment and commercial return.</td>
+                            <td>Some cost tracking but no investment case discipline.</td>
+                            <td>Every production investment tied to projected return. Budgets managed for revenue and efficiency. OKRs connected to LTV and content-attributed revenue.</td>
+                            <td>Investment cases consistently accurate. Cost per production decreasing while quality maintained.</td>
+                            <td>Content portfolio demonstrates clear ROI that leadership uses as the benchmark for investment decisions.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="background: #f5f5f5; border-radius: 8px; padding: 16px 20px; margin-top: 30px;">
+                    <p style="margin: 0; color: #666; font-size: 13px;"><strong>What this JD doesn't include:</strong> No ownership of transformation design or learning experience. No Mastery programmes in scope. No creative lens applied to the Mastery ecosystem. No unified transformation leadership across programme types. See the <em>Proposed + LX</em> tab to see what the role could become.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- TAB 1: GARETH WINTER JD — PROPOSED (with Pillar 2) -->
+        <div id="tab2" class="tab-content">
+            <div class="content-wrapper">
+                <button class="copy-button" onclick="copyTabContent(2)">Copy to Clipboard</button>
+                <span class="copy-status" id="copy-status-2">Copied!</span>
+
+                <div style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border: 2px solid #4caf50; border-radius: 10px; padding: 16px 20px; margin-bottom: 24px;">
+                    <strong style="color: #2e7d32; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Proposed State</strong>
+                    <p style="margin: 8px 0 0; color: #333; font-size: 14px;">This is what Gareth's job description <strong>would become</strong> under the proposed restructure — consolidating all creative production — customer-facing content, marketing and ad assets, and learning experience design — into one creative function, and expanding scope to include transformation design across the full membership.</p>
+                </div>
+
+                <h2>Creative Director – Mindvalley Content & Transformation Design</h2>
+
+                <h3>Role Mission</h3>
+                <p>Lead the creative vision, production, and strategic impact of Mindvalley's content and transformation ecosystem — Quests, Mastery programmes, Certifications, meditations, premium products, short-form content, and campaign assets. Partner with the CEO, CPO, CGO, MDM, and senior leadership to ensure every piece of content drives engagement, transformation, and growth.</p>
+
+                <p>Architect a content strategy that blends storytelling, learning experience design, product thinking, and AI-native workflows into a single system — moving Mindvalley from launch-driven content cycles to an always-on engine built for deep engagement, habit formation, and long-term retention.</p>
+
+                <p>Own the full creative and transformation pipeline end to end: from author scouting and curriculum design through on-set creative direction, post-production, marketing production, and campaign delivery — with learning experience design, transformation journey architecture, and all creative production (customer-facing content, marketing and ad assets) unified under a single creative function.</p>
+
+                <p>Set and protect the creative standard across every format and channel. Ensure a dedicated creative excellence capability lifts output quality consistently — from Quest launches, Mastery programmes, and Certifications to social content and performance marketing assets.</p>
+
+                <p>Operate as the creative bridge between Content, Product, and Marketing, ensuring these functions work as one system. Bring creative leadership grounded in data and commercial accountability.</p>
+
+                <h3>Key Expected Outcomes</h3>
+                <ul>
+                    <li><strong>Strategic Content Leadership:</strong> Clear content roadmap aligned to Pathways, with investment criteria for new programmes and lifecycle plans for existing ones.</li>
+                    <li><strong>High-Performing Creative Team:</strong> Leaders across both pillars are coached, accountable, and delivering measurable improvements to content quality, production throughput, and transformation outcomes.</li>
+                    <li><strong>Transformation Quality & Learning Experience:</strong> Curriculum design and transformation journeys unified under creative, ensuring content quality and learning effectiveness are designed together.</li>
+                    <li><strong>Customer Impact & Engagement:</strong> Content experiences consistently raise completion, re-engagement, and retention through data-informed curation and personalised pathways.</li>
+                    <li><strong>Data-Driven & AI-Driven Decision Making:</strong> Content priorities guided by consumption analytics, AI-powered pattern recognition, and customer feedback — with post-launch measurement feeding back into the next cycle.</li>
+                    <li><strong>AI-Enhanced Creative Engine:</strong> AI tools and AI-powered workflows embedded across curriculum design, scriptwriting, campaign generation, and production planning — reducing cycle times and cost per production.</li>
+                    <li><strong>Unified Creative Output Quality:</strong> All creative production — customer-facing content, marketing and ad assets, learning experience design — operates under one creative standard. Output quality is consistent across every format and channel, with a dedicated creative excellence capability setting and lifting the bar.</li>
+                    <li><strong>Cross-Functional Alignment:</strong> Stakeholder consensus on content strategy with smooth delivery across Product, Marketing, and Leadership teams.</li>
+                    <li><strong>Business & Financial Accountability:</strong> Own and improve key content portfolio metrics (LTV, retention, content-attributed revenue, ROAS), ensuring production investments deliver strong ROI and support sustainable business growth.</li>
+                </ul>
+
+                <h3>Core Responsibilities</h3>
+                <ul>
+                    <li><strong>Set Content & Programme Strategy:</strong> Partner with the CPO and senior leadership to define the strategic direction for Mindvalley's content portfolio and translate it into annual roadmaps and quarterly OKRs with clear investment rationale.</li>
+                    <li><strong>Own Financial Levers:</strong> Align content priorities with business outcomes, building investment cases before greenlighting productions and benchmarking spend against ROAS, LTV, and content-attributed revenue.</li>
+                    <li><strong>Lead & Develop Team:</strong> Lead a unified creative function spanning Film Production, Post-Production, Marketing Production (organic + paid editing), Creative Excellence, Creative Operations, and Learning Experience Design. Set clear and ambitious quarterly OKRs, run structured reviews, and build promotion pathways. Develop leaders across both pillars and foster a culture where editors and filmmakers collaborate across disciplines, grow their craft, and build careers.</li>
+                    <li><strong>Own the Content & Transformation Lifecycle:</strong> Guide programmes from author scouting through curriculum design, on-set creative direction, post-production, campaign distribution, and performance review — ensuring every stage has clear ownership, quality standards, and timelines.</li>
+                    <li><strong>Unify Transformation Design Under Creative:</strong> Integrate learning experience design, curriculum architecture, and transformation journey mapping into the content function so that how members learn is designed with the same rigour as what they watch.</li>
+                    <li><strong>Drive Data & AI-Led Decisions:</strong> Use consumption analytics, behavioural data, AI-powered discovery, and customer feedback to prioritise what to commission, relaunch, or retire. Build scoring frameworks that make decision-making repeatable.</li>
+                    <li><strong>Embed AI Across Creative Operations:</strong> Deploy AI systems across the creative pipeline — from curriculum design and scriptwriting to campaign generation and gen-AI filmmaking. Build reusable tools the team can operate independently. Partner with engineering to shape platform-level AI capabilities.</li>
+                    <li><strong>Set & Protect Creative Standards:</strong> Own the storytelling quality, emotional resonance, and brand integrity of everything the creative function produces — across long-form content, short-form, social, organic, and paid assets. Direct on set. Review edits. Leverage a dedicated creative excellence capability to lift the standard consistently across all output types. Ensure Mindvalley's content looks, sounds, and feels like the category leader it aspires to be.</li>
+                    <li><strong>Own Unified Creative Production:</strong> Consolidate all creative production talent under one function with clear discipline separation — film production (capture + AI-gen), post-production (long-form and short-form output), and marketing production (social + paid editing). Ensure shared standards, shared tooling, and flex capacity across priorities so creative resources can be deployed where they create the most impact.</li>
+                    <li><strong>Cross-Functional Delivery:</strong> Operate as the connective layer between Content, Product, Marketing, and Leadership — bringing content insight upstream into strategic conversations and converging on unified plans with clear scope and ownership.</li>
+                </ul>
+
+                <h3>Technical & Industry Skills</h3>
+                <ul>
+                    <li>Proven ability to set creative vision and translate it into portfolio-level strategy, annual roadmaps, and quarterly execution across multiple formats and channels.</li>
+                    <li>Expertise in storytelling, scriptwriting, and narrative craft — shaping author stories into structured, emotionally compelling learning experiences.</li>
+                    <li>Deep experience in curriculum and learning experience design — architecting programme curricula with clear pedagogical logic and engagement mechanics.</li>
+                    <li>On-set creative direction — directing authors, presenters, and production teams under live production pressure.</li>
+                    <li>Strong command of subscription and retention mechanics within digital membership models.</li>
+                    <li>Skilled in building and deploying AI-native creative systems across the production pipeline.</li>
+                    <li>Commercial and data fluency — connecting creative decisions to business metrics, building investment cases, and reading consumption analytics.</li>
+                    <li>Experience in brand building, positioning, and evolving established brands into new categories.</li>
+                    <li>Experience leading performance marketing creative, VSL production, and social content within a unified creative function.</li>
+                    <li>Track record of consolidating distributed creative talent under shared standards, tooling, and quality frameworks.</li>
+                </ul>
+
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li><strong>Creative Judgement:</strong> Ability to assess content quality across scripts, edits, and campaigns — setting and holding the bar without micromanaging execution.</li>
+                    <li><strong>Strategic Influence:</strong> Gains alignment from senior leadership through evidence-backed cases and clear storytelling. Comfortable presenting to founders and C-suite.</li>
+                    <li><strong>Translation Between Creative & Commercial:</strong> Speaks fluently to both storytellers and commercial leaders. Turns data into briefs and creative ambition into business cases.</li>
+                    <li><strong>Resilience Under Ambiguity:</strong> Absorbs strategic redirects, competing priorities, and shifting timelines without losing momentum. Re-architects plans quickly when the landscape changes.</li>
+                    <li><strong>People Development:</strong> Builds individuals, not just teams. Identifies potential, coaches through honest feedback, and invests in growth.</li>
+                    <li><strong>Technical Curiosity:</strong> Learns by building. Picks up new tools and platforms on real problems. Leads AI adoption with credibility, not just enthusiasm.</li>
+                </ul>
+
+                <h3>Performance Metrics</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Outcome</th>
+                            <th>Not Met</th>
+                            <th>Almost There</th>
+                            <th>On Track</th>
+                            <th>Over & Above</th>
+                            <th>Smashed It</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Strategic Content Leadership</strong></td>
+                            <td>No clear content strategy; reactive commissioning.</td>
+                            <td>Partial roadmap, lacking commercial rationale or Pathways alignment.</td>
+                            <td>Clear roadmap aligned to Pathways with investment criteria and lifecycle plans.</td>
+                            <td>Roadmap includes scored author pipeline, projected returns, and relaunch calendar with measurable KPIs.</td>
+                            <td>Content strategy directly shapes company OKRs and competitive positioning. Leadership references it as the growth blueprint.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>High-Performing Creative Team</strong></td>
+                            <td>Low engagement and unclear objectives.</td>
+                            <td>Goals set but inconsistently tracked; feedback ad hoc.</td>
+                            <td>Team delivering on quarterly OKRs with healthy morale. Structured reviews and promotion pathways in place.</td>
+                            <td>Team exceeds key targets; individuals visibly growing into bigger roles.</td>
+                            <td>Team recognised internally as a benchmark for performance culture. Other departments adopt the model.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Transformation Quality</strong></td>
+                            <td>No measurable transformation outcomes. LX disconnected from content.</td>
+                            <td>LX function exists but operates in parallel. Curriculum quality inconsistent across programme types.</td>
+                            <td>Transformation design unified under creative across all programme types. Every programme has clear pedagogical logic and measurable outcomes.</td>
+                            <td>Transformation metrics improving across the portfolio. Creative lens visibly elevating execution quality across all formats. Member feedback reflects guided, intentional journeys.</td>
+                            <td>Transformation quality becomes Mindvalley's competitive moat. Members cite the learning experience as the primary reason for retention.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Customer Impact & Engagement</strong></td>
+                            <td>No measurable impact on completion, engagement, or retention.</td>
+                            <td>Minor gains, not sustained.</td>
+                            <td>Sustained improvement in completion, re-engagement, and pathway progression.</td>
+                            <td>Gains directly linked to retention improvement and revenue growth.</td>
+                            <td>Content cited as a primary driver of membership retention and LTV.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data-Driven & AI-Driven Decision Making</strong></td>
+                            <td>Roadmap based on intuition only.</td>
+                            <td>Some data used, but AI and customer feedback not leveraged.</td>
+                            <td>All priorities backed by data, AI insights, and customer feedback. Post-launch measurement feeds back into next cycle.</td>
+                            <td>Predictive analytics and AI models actively inform roadmaps.</td>
+                            <td>AI and customer-driven decision-making replicated in other parts of the company.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI-Enhanced Creative Engine</strong></td>
+                            <td>No AI tools adopted; manual workflows remain.</td>
+                            <td>Pilots started but benefits unclear.</td>
+                            <td>AI workflows embedded across curriculum design, scriptwriting, campaign generation, and production planning. Measurable efficiency gains.</td>
+                            <td>AI systems embedded across team; no single-person dependency. Partnership with engineering shaping platform capabilities.</td>
+                            <td>AI-driven approach becomes company benchmark; significant efficiency savings achieved.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Unified Creative Output Quality</strong></td>
+                            <td>Creative talent fragmented across functions. No shared standards. Inconsistent output quality across formats.</td>
+                            <td>Talent consolidated but standards not yet unified. Quality varies between long-form, short-form, and marketing output.</td>
+                            <td>All creative production under one function with shared standards, shared tooling, and clear discipline separation. Creative excellence capability actively lifting the bar. Consistent quality across all formats and channels.</td>
+                            <td>Output quality measurably improved across all formats. Cross-discipline collaboration producing stronger work. Editors developing broader skill sets through unified culture.</td>
+                            <td>Creative output quality becomes Mindvalley's recognised competitive advantage. External talent cites the function as a reason to join.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cross-Functional Alignment</strong></td>
+                            <td>Frequent misalignment delays launches.</td>
+                            <td>Occasional miscommunication; content consulted late.</td>
+                            <td>Content strategy shaped alongside product and commercial roadmaps. Smooth hand-offs across teams.</td>
+                            <td>Stakeholders proactively align before roadmap changes.</td>
+                            <td>Model becomes gold standard across Mindvalley.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Business & Financial Accountability</strong></td>
+                            <td>No connection between production investment and commercial return.</td>
+                            <td>Some cost tracking but no investment case discipline.</td>
+                            <td>Every production investment tied to projected return. Budgets managed for revenue and efficiency. OKRs connected to LTV and content-attributed revenue.</td>
+                            <td>Investment cases consistently accurate. Cost per production decreasing while quality maintained.</td>
+                            <td>Content portfolio demonstrates clear ROI that leadership uses as the benchmark for investment decisions.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- TAB 4: LEARNING EXPERIENCE PILLAR -->
+        <div id="tab3" class="tab-content">
+            <div class="content-wrapper">
+                <button class="copy-button" onclick="copyTabContent(3)">Copy to Clipboard</button>
+                <span class="copy-status" id="copy-status-3">Copied!</span>
+
+                <h2>Pillar 2: Learning Experience & Transformation Design — Integration Plan</h2>
+
+                <p><strong>Author:</strong> Gareth Winter, Creative Director</p>
+                <p><strong>Date:</strong> 1 April 2026</p>
+
+                <h3>Why This Pillar Exists</h3>
+                <p>Fran Facio Crespo and her team currently lead learning experience design and transformation coaching for Mindvalley's Mastery programmes and coaching network under Jaideep Chagger. Separately, Mindvalley's content team previously included Learning Experience Producers (LEPs) whose remit covered Quests and Quest meditations — that function was removed, leaving a gap in the creative function.</p>
+
+                <p>By bringing Fran's team into creative, Gareth steps into a role where he leads transformation design across all programme types: Quests, Mastery, Certifications, meditations, premium programmes, stage talks, and webinars. The team's mandate expands beyond Mastery to own learning experience design across the full membership — Quests, Mastery, Certifications, meditations, premium programmes, stage talks, and webinars. Mastery continues to be served, but within a broader remit where Gareth leads transformation design across all programme types and Fran's team is resourced to support the full portfolio.</p>
+
+                <p><strong>The strategic rationale is simple: retention is a creative problem.</strong> Members don't stay because the cinematography is beautiful. They stay because they transform. Bringing learning experience design into the creative function with Gareth as owner means content quality and transformation quality are designed together — not in parallel, not as an afterthought.</p>
+
+                <h4>What Mastery Gets in Return</h4>
+
+                <p>This isn't a one-way transfer. Bringing Fran's team into creative gives the Mastery ecosystem something it has never had: a <strong>creative director's lens on how Mastery programmes are executed, presented, and designed</strong>.</p>
+
+                <p>Today, Mastery programmes are shaped primarily through a learning experience and coaching lens — which is strong on pedagogy and transformation. What they don't currently benefit from is the filmmaker's eye, the creative director's instinct for storytelling, pacing, visual design, and production quality that Gareth brings to every piece of content his team touches.</p>
+
+                <p>Under this structure, Mastery gets:</p>
+                <ul>
+                    <li><strong>Creative direction on execution and presentation</strong> — how programmes look, feel, and flow from a cinematic and design standpoint, not just a pedagogical one</li>
+                    <li><strong>Access to the full production pipeline</strong> — Film, Post-Production, Design, and Creative Ops resources that can elevate how Mastery content is produced and delivered</li>
+                    <li><strong>A storytelling framework</strong> — the same narrative craft applied to Quests, Certifications, and premium content now shapes how Mastery journeys are structured and experienced</li>
+                    <li><strong>Higher output quality</strong> — creative standards, production values, and design consistency applied to the Mastery ecosystem at the same level as Mindvalley's flagship content</li>
+                </ul>
+
+                <p>In short: Gareth's creative function gains learning experience expertise across the business. Mastery gains a creative lens that strengthens the quality of everything it produces. Both sides benefit.</p>
+
+                <h3>What Moves</h3>
+
+                <h4>Team Transfer</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Current Role</th>
+                            <th>New Reporting Line</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fran Facio Crespo</td>
+                            <td>Senior Learning Experience Designer (under Jaideep Chagger)</td>
+                            <td>Senior Learning Experience Designer → Gareth Winter</td>
+                        </tr>
+                        <tr>
+                            <td>Celia Oviedo Guzman</td>
+                            <td>Learning Experience Designer</td>
+                            <td>→ Fran Facio Crespo</td>
+                        </tr>
+                        <tr>
+                            <td>Aarti Mehta-Nayyar</td>
+                            <td>EV Coach</td>
+                            <td>→ Fran Facio Crespo</td>
+                        </tr>
+                        <tr>
+                            <td>Elisa Tidswell</td>
+                            <td>EV Coach</td>
+                            <td>→ Fran Facio Crespo</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Fran Facio Crespo's Mandate</h3>
+
+                <p><strong>Title:</strong> Senior Learning Experience Designer</p>
+                <p><strong>Reports to:</strong> Gareth Winter (Creative Director)</p>
+                <p><strong>Outcome owned:</strong> How users transform</p>
+
+                <h4>Core accountabilities:</h4>
+                <ul>
+                    <li><strong>Curriculum design:</strong> Architect programme curricula from source material (author content, books, research, interviews, transcripts) into structured learning journeys with clear pedagogical logic and engagement mechanics.</li>
+                    <li><strong>Transformation journey architecture:</strong> Design the end-to-end member transformation arc — from onboarding through mastery — ensuring every programme moves members through a deliberate sequence of awareness, practice, integration, and habit formation.</li>
+                    <li><strong>Mastery programmes and coaching network:</strong> Continue to lead the learning experience design and transformation coaching for Mastery programmes and the EV coaching network — this is the team's core responsibility and continues unchanged under Gareth's leadership. Design for completion, retention, re-engagement, and measurable behaviour change.</li>
+                    <li><strong>Cross-pillar collaboration:</strong> Work directly with Film Production (Khairul) and Post-Production (Jia Wen Liu) to ensure that curriculum design informs how content is shot, structured, and delivered — not the other way around. Learning Experience shapes the brief; Content Engine executes it.</li>
+                    <li><strong>Programme coordination:</strong> Manage the operational side of programme development — timelines, stakeholder alignment, author collaboration, and delivery milestones.</li>
+                </ul>
+
+                <h3>How Pillar 2 Connects to Pillar 1</h3>
+
+                <p>The two pillars are not independent. They are designed to operate as a connected system:</p>
+
+                <div style="display: flex; gap: 0; margin: 20px 0; border-radius: 10px; overflow: hidden; border: 1px solid #e0e0e0;">
+                    <div style="flex: 1; background: linear-gradient(135deg, #e0f5f0, #ecfbf7); padding: 20px;">
+                        <div style="font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #00796b; margin-bottom: 14px;">Pillar 2 — Learning Experience</div>
+                        <div style="font-size: 13px; color: #333; line-height: 2;">
+                            Curriculum design & briefs<br>
+                            Transformation arc & structure<br>
+                            Engagement mechanics<br>
+                            Programme coordination<br>
+                            Member feedback & outcomes
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; background: #f5f5f5; padding: 20px 16px; gap: 8px;">
+                        <div style="font-size: 18px; color: #6C3FC5;">→</div>
+                        <div style="font-size: 18px; color: #6C3FC5;">→</div>
+                        <div style="font-size: 18px; color: #6C3FC5;">→</div>
+                        <div style="font-size: 18px; color: #6C3FC5;">→</div>
+                        <div style="font-size: 18px; color: #6C3FC5;">→</div>
+                    </div>
+                    <div style="flex: 1; background: linear-gradient(135deg, #e8f0fe, #f0f6ff); padding: 20px;">
+                        <div style="font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #1565c0; margin-bottom: 14px;">Pillar 1 — Content Engine</div>
+                        <div style="font-size: 13px; color: #333; line-height: 2;">
+                            Informs shoot planning (Khairul)<br>
+                            Shapes edit sequencing (Jia Wen Liu)<br>
+                            Feeds campaign messaging<br>
+                            Syncs with Creative Ops (Matt Wong)<br>
+                            Informs next-cycle commissioning
+                        </div>
+                    </div>
+                </div>
+
+                <p><strong>The key principle:</strong> Learning Experience shapes what gets built. Content Engine builds it to the highest standard. Neither pillar succeeds without the other.</p>
+
+                <h3>What This Changes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Before (LEPs in Content)</th>
+                            <th>Gap (LEPs Removed)</th>
+                            <th>After (Pillar 2)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LEPs sat inside the content team</td>
+                            <td>Learning experience design separated from content production</td>
+                            <td>Learning experience design reunited with content under Gareth</td>
+                        </tr>
+                        <tr>
+                            <td>Fran's team: Mastery programmes and coaching network only (under Jaideep)</td>
+                            <td>LX separated from creative; no unified ownership across all programme types</td>
+                            <td>Scope: Fran's team continues Mastery work; Gareth leads LX across all programme types — Quests, Certifications, meditations, premium, stage talks, webinars — with unified creative oversight</td>
+                        </tr>
+                        <tr>
+                            <td>LEPs worked alongside production teams</td>
+                            <td>Production teams operated without transformation input</td>
+                            <td>Fran Facio Crespo's team collaborates with Film and Post from the brief stage</td>
+                        </tr>
+                        <tr>
+                            <td>Curriculum design informed by content context</td>
+                            <td>Curriculum design disconnected from how content was shot and edited</td>
+                            <td>Curriculum-first workflow: LX brief → production brief → shoot → edit → delivery</td>
+                        </tr>
+                        <tr>
+                            <td>Transformation quality was a shared concern</td>
+                            <td>Transformation quality became no one's explicit outcome</td>
+                            <td>Transformation quality is Fran Facio Crespo's defined outcome</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>The Opportunity: Unified Content Function</h3>
+
+                <p>With Fran Facio Crespo's team inside creative, Gareth's function can now service the full spectrum of Mindvalley's content needs under one roof:</p>
+
+                <ul>
+                    <li><strong>Quests</strong> — curriculum design, filming, post-production, delivery</li>
+                    <li><strong>Mastery programmes</strong> — advanced learning architecture, deep transformation arcs</li>
+                    <li><strong>Certifications</strong> — ICF-accredited coach training programmes (Life, Business, Hypnotherapy, Holobody, 10x Fitness), curriculum design, and certification delivery</li>
+                    <li><strong>Meditation experiences</strong> — guided experience design, audio-visual production</li>
+                    <li><strong>Premium programmes</strong> — high-touch learning journeys, bespoke production</li>
+                    <li><strong>Stage talks</strong> — event content capture, transformation framing</li>
+                    <li><strong>Webinars</strong> — live learning experience design, production support</li>
+                </ul>
+
+                <p>This eliminates silos. Every content format benefits from the same creative standards, the same production pipeline, and — critically — the same learning experience rigour. The team is no longer fragmented across functions; it operates as one system.</p>
+
+                <h3>Success Criteria</h3>
+
+                <div class="metric-category">
+                    <h4>Within 90 days:</h4>
+                    <ul>
+                        <li>Fran Facio Crespo and team fully integrated into Gareth's org with clear reporting lines</li>
+                        <li>First programme designed using the curriculum-first workflow (LX brief → production brief → shoot → edit → delivery)</li>
+                        <li>Cross-pillar working rhythm established with Film (Khairul) and Post-Production (Jia Wen Liu)</li>
+                    </ul>
+                </div>
+
+                <div class="metric-category">
+                    <h4>Within 6 months:</h4>
+                    <ul>
+                        <li>Every new programme — regardless of format — has a documented transformation arc and pedagogical framework before production begins</li>
+                        <li>Measurable improvement in programme completion rates for content designed under the new model</li>
+                        <li>Member feedback reflects a more guided, intentional learning experience</li>
+                        <li>Gareth and Fran's team collaborating across content types beyond Mastery (Quests, Certifications, meditations, premium, stage talks, webinars) as part of unified creative function</li>
+                    </ul>
+                </div>
+
+                <div class="metric-category">
+                    <h4>Within 12 months:</h4>
+                    <ul>
+                        <li>Transformation quality becomes a core competitive differentiator for Mindvalley</li>
+                        <li>Retention data shows measurable impact from curriculum-designed content vs. legacy content</li>
+                        <li>The LX pillar is resourced to support the full programme portfolio without bottlenecks</li>
+                        <li>The unified content function is recognised internally as the model for how Mindvalley produces and delivers transformative experiences</li>
+                    </ul>
+                </div>
+
+                <h3>Benefits of This Integration</h3>
+
+                <div class="outcome-grid">
+                    <div class="outcome-card">
+                        <strong>Unified Transformation Leadership</strong>
+                        For the first time, one creative leader owns transformation quality across the entire business — Quests, Mastery, Certifications, meditations, premium, stage talks, and webinars. No fragmented ownership, no gaps.
+                    </div>
+                    <div class="outcome-card">
+                        <strong>Creative Lens on Mastery</strong>
+                        Mastery programmes gain access to a filmmaker and creative director's perspective on execution, presentation, storytelling, and design — elevating the quality of the Mastery ecosystem beyond pedagogy alone.
+                    </div>
+                    <div class="outcome-card">
+                        <strong>Full Production Pipeline for Mastery</strong>
+                        Fran's team gains direct access to Film, Post-Production, Design, and Creative Ops resources. Mastery content can now be produced at the same standard as Mindvalley's flagship Quests, Certifications, and premium products.
+                    </div>
+                    <div class="outcome-card">
+                        <strong>Curriculum-First Content Design</strong>
+                        Learning experience briefs inform how content is shot, structured, and delivered — not the other way around. Transformation is designed in from the start, not retrofitted.
+                    </div>
+                    <div class="outcome-card">
+                        <strong>Retention as a Creative Outcome</strong>
+                        With transformation quality and content quality under one roof, the team can design for completion, habit formation, and long-term retention as a single system — not two functions working in parallel.
+                    </div>
+                    <div class="outcome-card">
+                        <strong>Operational Coherence</strong>
+                        Matt Wong's creative operations function covers both pillars — capacity planning, vendor strategy, and workflow governance apply to Mastery and Certification production with the same rigour as Quests and campaigns.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- TAB 2: MATT WONG JD -->
+        <div id="tab4" class="tab-content">
+            <div class="content-wrapper">
+                <button class="copy-button" onclick="copyTabContent(4)">Copy to Clipboard</button>
+                <span class="copy-status" id="copy-status-4">Copied!</span>
+
+                <h2>Senior Creative Operations Specialist – Mindvalley Creative</h2>
+
+                <div style="display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; font-size: 13px; color: #555;">
+                    <div><strong>Department:</strong> Creative</div>
+                    <div><strong>Reports to:</strong> Creative Director</div>
+                    <div><strong>Level:</strong> B3</div>
+                    <div><strong>Effective Date:</strong> 1 April 2026 (target)</div>
+                </div>
+
+                <h3>Role Mission</h3>
+                <p>Own the operational performance, governance, and continuous improvement of Mindvalley's creative function. Ensure that creative teams across Film Production, Post-Production, Design, Product Design, Social Media, Marketing, Content Coordination, and Learning Experience deliver on time, within budget, and with full visibility into capacity, cost, and workflow health.</p>
+
+                <p>Operate at the intersection of creative teams, senior leadership, and cross-functional stakeholders, translating business priorities into operational execution, building systems, and owning the business outcomes those systems produce.</p>
+
+                <h3>Key Expected Outcomes</h3>
+                <ul>
+                    <li><strong>Operational Governance & Performance:</strong> SLAs established and enforced across all creative teams. Delivery turnaround, cost per deliverable, and team utilisation tracked, and actioned, optimised continuously, in addition to reporting.</li>
+                    <li><strong>Cross-Functional Coordination:</strong> Operational interface between creative teams and the wider business runs smoothly. Scheduling, resourcing, and process discipline maintained across all key meetings, campaigns, productions and launch cycles.</li>
+                    <li><strong>Capacity Planning & Resource Forecasting:</strong> Department-wide capacity picture owned holistically across all creative functions (Content, Films, Design, Social Media, Events, Marketing), with accurate forecasts and proactive bottleneck resolution.</li>
+                    <li><strong>Vendor & Budget Strategy:</strong> Accountability for creative operations spend. Annual vendor strategy, contract negotiations, and cost optimisation managed with a utilisation-first approach.</li>
+                    <li><strong>Process Improvement & Automation:</strong> Strategic automation roadmap prioritised against business objectives, delivering measurable reductions in cycle time and cost per deliverable.</li>
+                    <li><strong>Data, Reporting & Operational Intelligence:</strong> Operational dashboards provide real-time department-wide visibility. OKRs are owned, not just tracked, with escalations and action plans driven when metrics move off track.</li>
+                    <li><strong>Launch Planning & Campaign Coordination:</strong> Large-scale campaigns and launches operationally locked in ahead of execution, with cross-team alignment and minimal bottlenecks.</li>
+                </ul>
+
+                <h3>Core Responsibilities</h3>
+                <ul>
+                    <li><strong>Own Operational Governance:</strong> Establish and enforce SLAs, monitor delivery turnaround times, manage archive and storage, and report on operational health to senior leadership.</li>
+                    <li><strong>Lead Cross-Functional Coordination:</strong> Serve as the operational interface between content, creative teams and product, marketing, programmes, and executive leadership. Maintain active presence in weekly coordination and planning meetings.</li>
+                    <li><strong>Own Capacity Planning:</strong> Maintain a real-time view of team bandwidth across all creative functions: Films, Post-Production, Design, Product Design, Social Media, Marketing, and Learning Experience. Proactively identify bottlenecks and provide leadership with accurate resource forecasts.</li>
+                    <li><strong>Manage Vendor & Budget Strategy:</strong> Own annual vendor and tooling strategy, including budgeting, forecasting, renewal cycles, contract negotiations, and proactive cost optimisation. Apply a utilisation-first approach to every vendor and subscription decision.</li>
+                    <li><strong>Drive Process Improvement & Automation:</strong> Own and prioritise a formal automation roadmap leveraging Airtable, Jira Automation, Claude and Make.com. Sequence improvements against business objectives and report on progress regularly.</li>
+                    <li><strong>Own Operational Dashboards & OKRs:</strong> Maintain dashboards in Looker Studio, Jira, and Airtable tracking task volume, completion rates, delivery times, and utilisation. Drive action plans when metrics move off track.</li>
+                    <li><strong>Coordinate Launches & Campaigns:</strong> Lead operational coordination for large-scale campaigns — ensuring ticketing, timelines, resource allocation, and stakeholder accountability are locked in ahead of execution.</li>
+                    <li><strong>Enforce Workflow Compliance:</strong> Ensure all teams follow established processes so that every stakeholder has visibility of progress and deliverables.</li>
+                    <li><strong>Coordinate Product Design & Marketing Operations:</strong> Own the operational interface with Product Design for roadmap and capacity management, and with Marketing for campaign and advertising creative resource planning.</li>
+                </ul>
+
+                <h3>Technical & Industry Skills</h3>
+                <ul>
+                    <li>Project and resource management across multiple concurrent workstreams and creative disciplines.</li>
+                    <li>No-code automation and business process design (Airtable Level 3 certified, Jira, Claude, Make.com).</li>
+                    <li>Vendor negotiation, contract management, and budget oversight with proven cost-saving track record.</li>
+                    <li>Data analysis and operational dashboard development (Looker Studio, Jira, Airtable, Claude).</li>
+                    <li>Process improvement methodology and workflow design, including SLA frameworks and T-shirt sizing models.</li>
+                    <li>Capacity modelling and resource forecasting across cross-functional creative teams.</li>
+                </ul>
+
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li><strong>Stakeholder Communication & Executive Presence:</strong> Clear, confident operational reporting to senior leadership and cross-functional partners.</li>
+                    <li><strong>Cross-Functional Influence:</strong> Drives alignment and accountability across teams without direct authority. Trusted by department leads and executives alike.</li>
+                    <li><strong>Solution-Oriented Problem Solving:</strong> Identifies issues early and drives resolution before they become blockers. Approaches every problem with a bias toward action.</li>
+                    <li><strong>Change Management & Adaptability:</strong> Navigates shifting priorities, team changes, and operational pressure without losing process discipline. Proven ability to absorb new scope rapidly.</li>
+                    <li><strong>Proactive Communication & Escalation:</strong> Surfaces risks and dependencies before they impact delivery.</li>
+                    <li><strong>Organisational Discipline:</strong> Maintains rigour across systems, tracking, and workflow compliance at scale — across multiple teams and disciplines simultaneously.</li>
+                </ul>
+
+                <h3>Performance Metrics</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Outcome</th>
+                            <th>Not Met</th>
+                            <th>Almost There</th>
+                            <th>On Track</th>
+                            <th>Over & Above</th>
+                            <th>Smashed It</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Operational Governance</strong></td>
+                            <td>No SLAs. Delivery times untracked. Operational health invisible to leadership.</td>
+                            <td>SLAs partially defined. Some tracking in place but inconsistent. Reporting reactive.</td>
+                            <td>SLAs enforced across all teams. Delivery turnaround, cost per deliverable, and utilisation tracked and reported regularly.</td>
+                            <td>Metrics consistently met. Action plans driven proactively when OKRs move off track. Leadership has real-time visibility.</td>
+                            <td>Operational governance model adopted as the standard across Mindvalley. Other departments request the framework.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cross-Functional Coordination</strong></td>
+                            <td>Frequent scheduling conflicts and miscommunication. Creative teams misaligned with business priorities.</td>
+                            <td>Present in key meetings but not driving operational outcomes from them.</td>
+                            <td>Active participation in all key cross-functional meetings. Scheduling, resourcing, and process discipline maintained across Films, Design, Social Media, Marketing, and Learning Experience.</td>
+                            <td>Stakeholders proactively align before changes. Creative operations insight influences planning upstream.</td>
+                            <td>Coordination model becomes gold standard. Other functions adopt the same operational rhythm.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Capacity Planning</strong></td>
+                            <td>No visibility into team bandwidth. Bottlenecks discovered after they impact delivery.</td>
+                            <td>Capacity tracked per team but not holistically across the department.</td>
+                            <td>Real-time department-wide capacity view maintained across all creative functions (Content, Films, Design, Social Media, Events, Marketing). Bottlenecks identified and resolved proactively. Accurate forecasts provided.</td>
+                            <td>Capacity recommendations actively shape production scheduling and hiring decisions.</td>
+                            <td>Capacity planning system becomes a company-wide model for resource management.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vendor & Budget Strategy</strong></td>
+                            <td>No vendor strategy. Spend unmanaged. Renewals missed or unoptimised.</td>
+                            <td>Some cost tracking but no strategic approach to vendor management.</td>
+                            <td>Annual vendor strategy owned. Contracts negotiated. Cost optimisation applied with utilisation-first approach. Budget forecasts accurate.</td>
+                            <td>Measurable cost savings achieved year-on-year. Vendor performance benchmarked and actioned.</td>
+                            <td>Vendor and budget strategy cited by leadership as a model for operational efficiency.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Process Improvement & Automation</strong></td>
+                            <td>No improvement roadmap. Ad hoc fixes only.</td>
+                            <td>Some improvements made but not prioritised or tracked against business objectives.</td>
+                            <td>Strategic automation roadmap owned, prioritised, and reviewed regularly. Measurable reductions in cycle time and cost per deliverable.</td>
+                            <td>Automation gains free up significant team capacity. Improvements directly linked to throughput increases.</td>
+                            <td>Automation roadmap becomes a reference model. Other departments adopt the methodology.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Operational Intelligence</strong></td>
+                            <td>No dashboards. Data hygiene poor. Leadership has no visibility into creative operations.</td>
+                            <td>Dashboards exist but KPIs not consistently owned or actioned.</td>
+                            <td>Dashboards provide real-time visibility across all teams. KPIs owned with action plans when metrics drift.</td>
+                            <td>Operational data actively informs strategic decisions beyond the creative department.</td>
+                            <td>Operational intelligence system becomes the benchmark for data-driven department management at Mindvalley.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Launch Coordination</strong></td>
+                            <td>Launches frequently delayed. Resourcing and timelines not locked in advance.</td>
+                            <td>Some coordination but gaps in cross-team alignment during high-pressure periods.</td>
+                            <td>All campaigns and launches operationally locked in ahead of execution. Cross-team alignment maintained. Minimal bottlenecks.</td>
+                            <td>Launch coordination so effective that delivery speed increases without quality trade-offs.</td>
+                            <td>Launch model adopted by other departments for their own cross-functional campaigns.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+            <script>
+        function showTab(tabIndex) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+
+            // Show selected tab content
+            document.getElementById('tab' + tabIndex).classList.add('active');
+
+            // Add active class to clicked button
+            buttons[tabIndex].classList.add('active');
+
+            // Scroll to top of content
+            window.scrollTo(0, 0);
+        }
+
+        function copyTabContent(tabIndex) {
+            const tabContent = document.getElementById('tab' + tabIndex);
+            const text = extractTextContent(tabContent);
+
+            navigator.clipboard.writeText(text).then(() => {
+                // Show success message
+                const statusElement = document.getElementById('copy-status-' + tabIndex);
+                statusElement.classList.add('show');
+
+                // Hide after 2 seconds
+                setTimeout(() => {
+                    statusElement.classList.remove('show');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy to clipboard. Please try again.');
+            });
+        }
+
+        function extractTextContent(element) {
+            let text = '';
+            const walker = document.createTreeWalker(
+                element,
+                NodeFilter.SHOW_TEXT,
+                null,
+                false
+            );
+
+            let node;
+            while (node = walker.nextNode()) {
+                text += node.textContent;
+            }
+
+            return text.trim();
+        }
+
+        // Initialize first tab as active
+        document.addEventListener('DOMContentLoaded', function() {
+            showTab(0);
+        });
+    </script>
+</body>
+</html>
