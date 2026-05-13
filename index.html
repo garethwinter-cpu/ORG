@@ -311,6 +311,24 @@
         }
         .pillar-header.blue { background: linear-gradient(135deg, #1565c0, #1e88e5); }
         .pillar-header.teal { background: linear-gradient(135deg, #00796b, #009688); }
+        .pillar-header.purple { background: linear-gradient(135deg, #6C3FC5, #8e5fd6); }
+        .pillar-header.orange { background: linear-gradient(135deg, #ef6c00, #ff9800); }
+        .pillar-header.pink { background: linear-gradient(135deg, #c2185b, #e91e63); }
+        .org-box.purple {
+            background: linear-gradient(135deg, #f0e6fb, #f7eefc);
+            border: 1.5px solid #b89cdc;
+            width: 100%;
+        }
+        .org-box.orange {
+            background: linear-gradient(135deg, #fff3e0, #fff8e1);
+            border: 1.5px solid #ffb74d;
+            width: 100%;
+        }
+        .org-box.pink {
+            background: linear-gradient(135deg, #fce4ec, #fff0f5);
+            border: 1.5px solid #f48fb1;
+            width: 100%;
+        }
 
         .pillar-body {
             border: 2px solid #e0e0e0;
@@ -634,178 +652,157 @@
                 </ul>
 
                 <h3>ORG Structure</h3>
+                <p style="font-size: 12px; color: #666; margin-top: -8px;">Source: BambooHR — Content, Advertising, Brand and Marketing structure</p>
                 <div class="org-chart">
                     <!-- DIRECTOR -->
                     <div class="org-box director">
                         <div class="name">Gareth Winter</div>
-                        <div class="role">Creative Director, Content & Transformation Design</div>
+                        <div class="role">Creative Director</div>
                         <div class="outcome">Vision, creative standards & strategy</div>
-                        <div style="font-size: 10px; color: #666; margin-top: 4px;">7 direct reports · ~22 total · outcome-led</div>
+                        <div style="font-size: 10px; color: #666; margin-top: 4px;">4 pillars · 4 direct reports · ~17 total</div>
                     </div>
                     <div class="connector" style="width: 2px; height: 24px; background: #c4b5e0; margin: 0 auto;"></div>
 
-                    <div class="pillar-row">
-                        <!-- PILLAR 1: CONTENT ENGINE -->
-                        <div class="pillar-section" style="max-width: 720px;">
-                            <div class="pillar-header blue">Pillar 1: Content Engine</div>
+                    <div class="pillar-row" style="flex-wrap: wrap;">
+
+                        <!-- PILLAR 1: MARKETING EDITING -->
+                        <div class="pillar-section" style="max-width: 340px;">
+                            <div class="pillar-header purple">Pillar 1: Marketing Editing</div>
+                            <div class="pillar-body" style="flex-direction: column; align-items: stretch;">
+
+                                <!-- JASON ROPER -->
+                                <div class="team-group">
+                                    <div class="org-box purple" style="border-radius: 10px;">
+                                        <div class="name">Jason Roper</div>
+                                        <div class="role">Video Editor</div>
+                                    </div>
+                                </div>
+
+                                <!-- TITUS THANA RAJ + TEAM -->
+                                <div class="team-group">
+                                    <div class="org-box purple" style="border-radius: 10px 10px 0 0;">
+                                        <div class="name">Titus Thana Raj</div>
+                                        <div class="role">VSL Editing Team Manager</div>
+                                    </div>
+                                    <div class="team-members">
+                                        <div class="org-box member">
+                                            <div class="name">Marwah Al-Attraqchi</div>
+                                            <div class="role">Senior Cinematographer &amp; Video Editor</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Shan K. Palanival</div>
+                                            <div class="role">Senior Video Editor</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Yuthika Peiris</div>
+                                            <div class="role">Senior Video Editor</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Miguel Alvarez</div>
+                                            <div class="role">Senior Video Content Producer</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Taaniel Raukas</div>
+                                            <div class="role">Video Editor</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PILLAR 2: CONTENT PRODUCTION -->
+                        <div class="pillar-section" style="max-width: 380px;">
+                            <div class="pillar-header orange">Pillar 2: Content Production</div>
                             <div class="pillar-body" style="flex-direction: column; align-items: stretch;">
 
                                 <!-- KHAIRUL JOHARI + TEAM -->
                                 <div class="team-group">
-                                    <div class="org-box blue" style="width: 100%; border-radius: 10px 10px 0 0;">
+                                    <div class="org-box orange" style="border-radius: 10px 10px 0 0;">
                                         <div class="name">Khairul Johari</div>
                                         <div class="role">Head of Film Production</div>
-                                        <div class="outcome">Capture excellence + AI-gen</div>
                                     </div>
                                     <div class="team-members">
                                         <div class="org-box member">
-                                            <div class="name">Paul Hanna</div>
-                                            <div class="role">Videographer</div>
-                                            <div class="outcome">On-set capture & camera ops</div>
+                                            <div class="name">Leonardo Govoni</div>
+                                            <div class="role">Senior Line Producer</div>
+                                            <span class="badge contractor">contractor</span>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Kuhan Kunasegaran</div>
-                                            <div class="role">Videographer</div>
-                                            <div class="outcome">On-set capture & camera ops</div>
+                                            <div class="role">Senior Video Editor II</div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Charuk Ong Chiang</div>
-                                            <div class="role">Videographer</div>
-                                            <div class="outcome">On-set capture & camera ops</div>
+                                            <div class="role">Senior Motion Artist &amp; Video Editor</div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Nadir Salam</div>
-                                            <div class="role">Videographer</div>
-                                            <div class="outcome">On-set capture & camera ops</div>
-                                        </div>
-                                        <div class="org-box member">
-                                            <div class="name">Leonardo Govoni</div>
-                                            <div class="role">Videographer</div>
-                                            <span class="badge contractor">contractor</span>
-                                            <div class="outcome">On-set capture & camera ops</div>
+                                            <div class="role">Production Lead</div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- JIA WEN LIU + TEAM -->
                                 <div class="team-group">
-                                    <div class="org-box blue" style="width: 100%; border-radius: 10px 10px 0 0;">
+                                    <div class="org-box orange" style="border-radius: 10px 10px 0 0;">
                                         <div class="name">Jia Wen Liu</div>
                                         <div class="role">Post-Production Lead</div>
-                                        <span class="badge elevated">elevated</span>
-                                        <div class="outcome">Long-form & short-form output quality</div>
                                     </div>
                                     <div class="team-members">
                                         <div class="org-box member">
                                             <div class="name">Mildred Michael</div>
-                                            <div class="role">Video Editor</div>
-                                            <div class="outcome">Long-form & short-form editing</div>
+                                            <div class="role">Senior Video Editor</div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Shan P Purana Vellu</div>
-                                            <div class="role">Video Editor</div>
-                                            <div class="outcome">Long-form & short-form editing</div>
+                                            <div class="role">Motion Graphic Specialist</div>
+                                        </div>
+                                        <div class="org-box member">
+                                            <div class="name">Paul Hanna</div>
+                                            <div class="role">Lead Editor</div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <!-- TITUS THANA RAJ + TEAM -->
-                                <div class="team-group">
-                                    <div class="org-box blue" style="width: 100%; border-radius: 10px 10px 0 0;">
-                                        <div class="name">Titus Thana Raj</div>
-                                        <div class="role">Marketing Production Lead</div>
-                                        <span class="badge new">new to creative</span>
-                                        <div class="outcome">Organic and Paid Marketing Content: Quality & Throughput</div>
-                                    </div>
-                                    <div class="team-members">
-                                        <div class="org-box member">
-                                            <div class="name">Yuthika Peiris</div>
-                                            <div class="role">Senior Video Editor I</div>
-                                            <div class="outcome">Social & organic video editing</div>
-                                        </div>
-                                        <div class="org-box member">
-                                            <div class="name">Miguel Angel Vazquez Alvarez</div>
-                                            <div class="role">Senior Video Content Producer | Social Media</div>
-                                            <div class="outcome">Social & organic video editing</div>
-                                        </div>
-                                        <div class="org-box member">
-                                            <div class="name">Marwah Al-Attraqchi</div>
-                                            <div class="role">Video Editor</div>
-                                            <div class="outcome">VSL & paid ad editing</div>
-                                        </div>
-                                        <div class="org-box member">
-                                            <div class="name">Shan K. Palanival</div>
-                                            <div class="role">Video Editor</div>
-                                            <div class="outcome">VSL & paid ad editing</div>
-                                        </div>
-                                        <div class="org-box member">
-                                            <div class="name">Taaniel Raukas</div>
-                                            <div class="role">Video Editor | Social Media</div>
-                                            <div class="outcome">Social & organic video editing</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- STANDALONE: JASON ROPER -->
-                                <div class="org-box blue" style="width: auto; min-width: 220px; margin: 0 auto;">
-                                    <div class="name">Jason Roper</div>
-                                    <div class="role">Video Editor — Creative Excellence</div>
-                                    <span class="badge" style="background:#e8f5e9;color:#2e7d32;">direct to gareth</span>
-                                    <div class="outcome">Creative quality standard & special projects</div>
-                                </div>
-
-                                <!-- STANDALONE: MATT WONG -->
-                                <div class="org-box blue" style="width: auto; min-width: 220px; margin: 0 auto;">
-                                    <div class="name">Matt Wong</div>
-                                    <div class="role">Senior Creative Operations Specialist (B3)</div>
-                                    <span class="badge promoted">promoted</span>
-                                    <div class="outcome">Governance, capacity planning & vendor strategy</div>
-                                </div>
-
-                                <!-- DEPARTING: HASSAAN -->
-                                <div class="org-box" style="background: #f5f5f5; border: 1.5px dashed #bbb; width: auto; min-width: 180px; margin: 0 auto;">
-                                    <div class="name" style="color: #999;">Hassaan Islam</div>
-                                    <div class="role" style="color: #bbb;">Creative Production & Content Ops</div>
-                                    <span class="badge" style="background:#ffebee;color:#c62828;">departing</span>
                                 </div>
 
                             </div>
                         </div>
 
-                        <!-- PILLAR 2: LEARNING EXPERIENCE -->
-                        <div class="pillar-section" style="max-width: 340px;">
-                            <div class="pillar-header teal">Pillar 2: Learning Experience</div>
+                        <!-- PILLAR 3: CREATIVE OPERATIONS -->
+                        <div class="pillar-section" style="max-width: 240px;">
+                            <div class="pillar-header pink">Pillar 3: Creative Operations</div>
                             <div class="pillar-body" style="flex-direction: column; align-items: stretch;">
 
-                                <!-- FRAN FACIO CRESPO + TEAM -->
                                 <div class="team-group">
-                                    <div class="org-box teal" style="width: 100%; border-radius: 10px 10px 0 0;">
-                                        <div class="name">Fran Facio Crespo</div>
-                                        <div class="role">Senior Learning Experience Designer</div>
-                                        <span class="badge new">new to creative</span>
-                                        <div class="outcome">How users transform</div>
-                                    </div>
-                                    <div class="team-members">
-                                        <div class="org-box member">
-                                            <div class="name">Celia Oviedo Guzman</div>
-                                            <div class="role">Learning Experience Designer</div>
-                                            <div class="outcome">LX design & programme structure</div>
-                                        </div>
-                                        <div class="org-box member">
-                                            <div class="name">Aarti Mehta-Nayyar</div>
-                                            <div class="role">Learning Experience Designer</div>
-                                            <div class="outcome">LX design & coaching integration</div>
-                                        </div>
-                                        <div class="org-box member">
-                                            <div class="name">Elisa Tidswell</div>
-                                            <div class="role">Learning Experience Designer</div>
-                                            <div class="outcome">LX design & transformation quality</div>
-                                        </div>
+                                    <div class="org-box pink" style="border-radius: 10px;">
+                                        <div class="name">Matt Wong</div>
+                                        <div class="role">Senior Creative Operations Specialist</div>
+                                        <div class="outcome">Creative Business Operations</div>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
+
+                        <!-- PILLAR 4: LEARNING EXPERIENCE -->
+                        <div class="pillar-section" style="max-width: 240px;">
+                            <div class="pillar-header teal">Pillar 4: Learning Experience</div>
+                            <div class="pillar-body" style="flex-direction: column; align-items: stretch;">
+
+                                <div class="team-group">
+                                    <div class="org-box teal" style="width: 100%; border-radius: 10px;">
+                                        <div class="name">Blinklife / Claude</div>
+                                        <div class="role">Senior Learning Experience Designer</div>
+                                        <span class="badge" style="background:#e8eaf6;color:#283593;">AI agent</span>
+                                        <div class="outcome">Curriculum architecture &amp; LX delivery</div>
+                                    </div>
+                                </div>
+
+                                <p style="font-size: 11px; color: #666; margin-top: 12px; line-height: 1.5;">Following Fran Facio Crespo's exit to coach in Mindvalley Academy, the LXM seat is staffed by an AI agent. Architectural ownership sits with Gareth; operational redistribution is detailed in the <strong>LX Absorption Risk</strong> tab.</p>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -819,31 +816,27 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Capture quality + AI-gen (film production)</td>
-                            <td>Khairul Johari</td>
-                        </tr>
-                        <tr>
-                            <td>Long-form & short-form output quality (post-production)</td>
-                            <td>Jia Wen Liu</td>
-                        </tr>
-                        <tr>
-                            <td>Marketing content quality & throughput (organic + paid)</td>
+                            <td>Marketing editing — VSL, paid, social &amp; organic content</td>
                             <td>Titus Thana Raj</td>
                         </tr>
                         <tr>
-                            <td>Creative quality standard & special projects</td>
-                            <td>Jason Roper</td>
+                            <td>Film production — capture, line production &amp; AI-gen</td>
+                            <td>Khairul Johari</td>
                         </tr>
                         <tr>
-                            <td>Operational scale, governance & throughput</td>
+                            <td>Post-production — long-form &amp; short-form output quality</td>
+                            <td>Jia Wen Liu</td>
+                        </tr>
+                        <tr>
+                            <td>Creative Business Operations — governance, capacity &amp; vendor strategy</td>
                             <td>Matt Wong</td>
                         </tr>
                         <tr>
-                            <td>Transformation journey & learning experience</td>
-                            <td>Fran Facio Crespo</td>
+                            <td>Learning Experience — curriculum architecture &amp; LX delivery</td>
+                            <td>Blinklife / Claude (AI agent), architectural sign-off with Gareth</td>
                         </tr>
                         <tr>
-                            <td>Vision, creative standards & strategy</td>
+                            <td>Vision, creative standards &amp; strategy</td>
                             <td>Gareth Winter</td>
                         </tr>
                     </tbody>
@@ -860,10 +853,10 @@
                     </thead>
                     <tbody>
                         <tr><td>1</td><td>Creative Director</td><td>Gareth Winter</td></tr>
-                        <tr><td>2</td><td>Deputy (Film & Production)</td><td>Khairul Johari</td></tr>
-                        <tr><td>3</td><td>Deputy (Post-Production & Output)</td><td>Jia Wen Liu</td></tr>
-                        <tr><td>4</td><td>Deputy (Marketing Production)</td><td>Titus Thana Raj</td></tr>
-                        <tr><td>5</td><td>Deputy (Operations & Systems)</td><td>Matt Wong</td></tr>
+                        <tr><td>2</td><td>Deputy (Film &amp; Production)</td><td>Khairul Johari</td></tr>
+                        <tr><td>3</td><td>Deputy (Post-Production &amp; Output)</td><td>Jia Wen Liu</td></tr>
+                        <tr><td>4</td><td>Deputy (Marketing Editing)</td><td>Titus Thana Raj</td></tr>
+                        <tr><td>5</td><td>Deputy (Operations &amp; Systems)</td><td>Matt Wong</td></tr>
                     </tbody>
                 </table>
 
@@ -982,14 +975,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>Gareth Winter</td><td>7</td><td>~23 (including all nested reports)</td></tr>
-                        <tr><td>Khairul Johari</td><td>4 + 1 contractor</td><td>5 (film production)</td></tr>
-                        <tr><td>Jia Wen Liu</td><td>2</td><td>2 (post-production)</td></tr>
-                        <tr><td>Titus Thana Raj</td><td>5</td><td>5 (marketing production — organic + paid)</td></tr>
-                        <tr><td>Jason Roper</td><td>0</td><td>0 (creative excellence, direct to Gareth)</td></tr>
-                        <tr><td>Matt Wong</td><td>0</td><td>0 (B3, creative operations)</td></tr>
-                        <tr><td>Hassaan Islam</td><td>0</td><td>0 (departing)</td></tr>
-                        <tr><td>Fran Facio Crespo</td><td>3</td><td>3 (LX & coaching)</td></tr>
+                        <tr><td>Gareth Winter</td><td>4 (Titus, Khairul, Jia Wen, Matt) + Jason direct + LX agent</td><td>~17 total across 4 pillars</td></tr>
+                        <tr><td>Titus Thana Raj</td><td>5</td><td>5 (marketing editing — VSL, paid, social &amp; organic)</td></tr>
+                        <tr><td>Khairul Johari</td><td>3 + 1 contractor</td><td>4 (film production)</td></tr>
+                        <tr><td>Jia Wen Liu</td><td>3</td><td>3 (post-production)</td></tr>
+                        <tr><td>Matt Wong</td><td>0</td><td>0 (creative operations)</td></tr>
+                        <tr><td>Jason Roper</td><td>0</td><td>0 (video editor, marketing editing pillar)</td></tr>
+                        <tr><td>Blinklife / Claude</td><td>0</td><td>0 (AI agent, learning experience)</td></tr>
                     </tbody>
                 </table>
             </div>
