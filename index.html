@@ -95,6 +95,7 @@
         .tab-button:nth-child(3).active { background: linear-gradient(135deg, #6C3FC5, #5a2fa8); }
         .tab-button:nth-child(4).active { background: linear-gradient(135deg, #00796b, #009688); }
         .tab-button:nth-child(5).active { background: linear-gradient(135deg, #1565c0, #1e88e5); }
+        .tab-button:nth-child(6).active { background: linear-gradient(135deg, #c62828, #8e0000); }
 
         .tab-content {
             display: none;
@@ -591,6 +592,7 @@
             <button class="tab-button" onclick="showTab(2)">Gareth JD (Current)</button>
             <button class="tab-button" onclick="showTab(3)">Gareth JD (Proposed)</button>
             <button class="tab-button" onclick="showTab(4)">Matt Wong JD</button>
+            <button class="tab-button" onclick="showTab(5)">LX Absorption Risk</button>
         </div>
 
         <!-- TAB 3: TEAM ORG STRUCTURE -->
@@ -1677,6 +1679,230 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+
+        <!-- TAB 5: LX ABSORPTION RISK & REDISTRIBUTION MEMO -->
+        <div id="tab5" class="tab-content">
+            <div class="content-wrapper">
+                <button class="copy-button" onclick="copyTabContent(5)">Copy to Clipboard</button>
+                <span class="copy-status" id="copy-status-5">Copied!</span>
+
+                <div style="background: linear-gradient(135deg, #ffebee, #ffcdd2); border: 2px solid #c62828; border-radius: 10px; padding: 16px 20px; margin-bottom: 24px;">
+                    <strong style="color: #c62828; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Discussion Paper — Confidential</strong>
+                    <p style="margin: 8px 0 0; color: #333; font-size: 14px;">Risk assessment and redistribution framework prepared in response to the Learning Experience scope being defaulted onto the Creative Director role following Fran's exit and Celia's departure.</p>
+                </div>
+
+                <h2>Learning Experience Absorption — Risk Assessment &amp; Redistribution Framework</h2>
+
+                <p><strong>Author:</strong> Gareth Winter, Creative Director — Content &amp; Transformation Design</p>
+                <p><strong>Date:</strong> 13 May 2026</p>
+                <p><strong>Audience:</strong> Jaideep, Vishen, Dario</p>
+                <p><strong>Status:</strong> Discussion paper</p>
+
+                <h3>Executive Summary</h3>
+                <p>Fran is exiting LX to become an Academy coach. Celia's role has already evaporated. The default assumption appears to be that I absorb both into the Creative Director remit.</p>
+                <p>This memo argues that the <strong>strategic and architectural</strong> layer of Learning Experience should sit with me, but the <strong>operational and recurring delivery</strong> layer must be redistributed across the Academy team — specifically Author Relations, Host, CX/CS, and central Ops (Janja/Yana) — with supporting absorption by Matt Wong and Anna Flankini inside my function. If we don't do this, the Creative Director role becomes operationally consumed, NPS ownership is decoupled from delivery capacity, and the company carries unmitigated single-point-of-failure risk on accreditation, curriculum, and creative leadership.</p>
+                <p>No headcount is requested. The proposal is a <strong>reallocation of existing accountabilities</strong>, mapped against the RACI Marianna published 28 April.</p>
+
+                <h3>The Real Scope of What I'm Being Asked to Absorb</h3>
+                <p>Combining Fran's LXM JD and Celia's inherited tasks, the absorbed scope contains three buckets:</p>
+
+                <h4>Strategic / architectural (legitimately Creative Director work)</h4>
+                <ul>
+                    <li>Curriculum architecture and 3-phase program design</li>
+                    <li>Methodology framework definition (per Mastery)</li>
+                    <li>Identity Shift Statement &amp; Transformation Promise</li>
+                    <li>Through-Line and Mastery DNA integration</li>
+                    <li>Brief design and quality standard</li>
+                    <li>Curriculum sign-off on author shortlists</li>
+                    <li>Curriculum decisions on author replacement / rescheduling</li>
+                </ul>
+
+                <h4>Operational / recurring (NOT Creative Director work)</h4>
+                <ul>
+                    <li>Weekly student check-ins for every Mastery cohort</li>
+                    <li>Live pre-session briefing calls before every session of every author</li>
+                    <li>Two-week pre-call briefing emails to every speaker</li>
+                    <li>Mid-program check-ins for every multi-session author</li>
+                    <li>Visual feedback (Deep) pages production for every speaker</li>
+                    <li>Author pack checklist enforcement, session by session</li>
+                    <li>NPS verbatim review and post-cohort fix shipping</li>
+                    <li>Weekly CX sync</li>
+                    <li>Accreditation renewals (ICF annually, EMCC bi-annually, CPD every cohort)</li>
+                </ul>
+
+                <h4>Pure platform / production ops (Celia's work)</h4>
+                <ul>
+                    <li>Typeform assessments — design, build, test, maintain</li>
+                    <li>Osiris product IDs + Platform shell setup for every Mastery / Accelerator / Certification / Summit</li>
+                    <li>Lesson population, Zoom links, schedule, feedback links</li>
+                    <li>Quest shell maintenance across cohorts</li>
+                    <li>Automated certificate delivery</li>
+                    <li>Summit recording uploads and ad-hoc content population</li>
+                </ul>
+
+                <p>The first bucket is roughly <strong>30% of the JD</strong>. The second and third buckets — combined — are roughly <strong>70%</strong>. That 70% is what cannot land on the Creative Director.</p>
+
+                <h3>Red Flags</h3>
+
+                <div class="card highlight">
+                    <h4>1. Span of control is already at the limit</h4>
+                    <p>I currently lead ~22 people across two pillars with 7 direct reports. Absorbing the LXM IC scope on top adds the equivalent of one full-time senior IC role plus a junior operational role to my personal calendar. The maths does not work, and degrading the existing CD remit is not a neutral cost — the wider creative function loses its creative leader.</p>
+                </div>
+
+                <div class="card highlight">
+                    <h4>2. Accountability decoupled from delivery capacity</h4>
+                    <p>The LXM role owns Program NPS as its primary KPI and Live Attendance / Completion as its secondary KPI. If I inherit the KPI but redistribute the delivery, I'm accountable for outcomes I no longer control day-to-day. That is the textbook setup for a scapegoat role. Either the accountability moves with the work, or the work moves with the accountability.</p>
+                </div>
+
+                <div class="card highlight">
+                    <h4>3. Single point of failure becomes worse, not better</h4>
+                    <p>Fran was already an SPOF for LX. Moving her scope onto a CD already covering Film, Post, Marketing Production, Creative Excellence and Creative Ops concentrates the SPOF further. If I am unavailable — illness, travel, executive work — both the creative function AND the entire learning experience layer go dark simultaneously.</p>
+                </div>
+
+                <div class="card highlight">
+                    <h4>4. Accreditation is compliance risk, not "admin"</h4>
+                    <p>ICF, EMCC, and CPD are external accreditations with hard renewal deadlines. If a renewal lapses, programs lose their accreditation mid-cohort. This is a legal/commercial risk that needs a named owner with a documented calendar, not a slot in the Creative Director's residual time.</p>
+                </div>
+
+                <div class="card highlight">
+                    <h4>5. Weekly student check-ins do not scale to a CD</h4>
+                    <p>"Run weekly check-ins with Mastery students directly" — across every cohort, every Mastery — is a full-time engagement workload. This is a coach/host/CX function, not a director function.</p>
+                </div>
+
+                <div class="card highlight">
+                    <h4>6. Live pre-session briefings are a meeting tax</h4>
+                    <p>Every author, every session, a live briefing call. Across an active Mastery slate that is dozens of calls a month. The brief itself is the safeguard — once it's clear, written, and templated, the live call should be the exception (new author, sensitive content), not the rule.</p>
+                </div>
+
+                <div class="card highlight">
+                    <h4>7. Celia's platform work needs platform skills, not creative direction</h4>
+                    <p>Osiris IDs, Typeform builds, Platform shells, Zoom link population, certificate automation — this is content ops execution. It does not belong anywhere near a Creative Director's calendar. It should never have been on Fran's plate either.</p>
+                </div>
+
+                <div class="card highlight">
+                    <h4>8. The "AI is shrinking us, no new hires" argument cuts both ways</h4>
+                    <p>If AI is enabling the company to shrink, then AI tooling must also be the answer here. Briefing emails, NPS verbatim summarisation, accreditation tracking, Osiris setup, Typeform build — all of these are high-leverage automation candidates. The redistribution plan should explicitly include automation as a worker, not just people.</p>
+                </div>
+
+                <h3>Redistribution Framework</h3>
+                <p><strong>Principle:</strong> Gareth owns architecture, methodology, and creative standards. The Academy team owns recurring delivery. Ops owns the platform and the calendar. AI absorbs the repeatable.</p>
+
+                <h4>A. What stays with Gareth (Creative Director)</h4>
+                <p>Strategic and architectural ownership only — the work that defines what good looks like and signs off when it does:</p>
+                <ul>
+                    <li>Curriculum architecture and 3-phase program design (one design pass per Mastery)</li>
+                    <li>Methodology framework definition (per program)</li>
+                    <li>Identity Shift Statement, Transformation Promise, Through-Line, Mastery DNA application</li>
+                    <li>Brief design and quality standard — the template, not the per-session execution</li>
+                    <li>Final sign-off on author shortlists from a curriculum-fit lens</li>
+                    <li>Final sign-off on curriculum decisions when an author is replaced</li>
+                    <li>Owning the LX standard at the executive table</li>
+                </ul>
+                <p><strong>Time cost target:</strong> ≤ 1 day per week in steady state, with concentrated bursts at the start of each new Mastery cycle.</p>
+
+                <h4>B. What moves to Author Relations (Marijana + Marta)</h4>
+                <p>AR already owns the author lifecycle per the 28 April RACI. The pre/during/post author touchpoints currently flagged as LXD-led should move to AR with curriculum sign-off from me:</p>
+                <ul>
+                    <li>Two-week pre-call briefing email (template defined once by me, AR sends per cycle)</li>
+                    <li>Author pack checklist enforcement (already an AR responsibility via contract)</li>
+                    <li>Mid-program author check-ins (relationship-led, not curriculum-led)</li>
+                    <li>Coordination of feedback delivery to authors (Deep pages produced by Ops; AR delivers)</li>
+                </ul>
+
+                <h4>C. What moves to Host (Ileana)</h4>
+                <p>Host is on the ground every live session and is the natural eyes-and-ears layer:</p>
+                <ul>
+                    <li>Live session quality monitoring and 24h flagging of curriculum deviations</li>
+                    <li>Session satisfaction inputs (verbatims, ratings) to AR pre-feedback call</li>
+                    <li>Mid-cohort attendance and engagement signal — the early-warning system</li>
+                    <li>Live experience continuity (cancellations, rescheduling on the day)</li>
+                </ul>
+
+                <h4>D. What moves to CX/CS (Tom)</h4>
+                <p>CX already owns student-facing communication. The weekly engagement layer belongs here, not with a director:</p>
+                <ul>
+                    <li>Weekly student check-ins across active Mastery cohorts</li>
+                    <li>Re-engagement outreach for slipping students (defined plays, not bespoke)</li>
+                    <li>NPS verbatim aggregation into a structured weekly summary for me to review</li>
+                    <li>Member feedback delivery to AR five business days before each feedback call</li>
+                </ul>
+
+                <h4>E. What moves to central Ops (Janja / Yana)</h4>
+                <p>Yana is already named as central ops lead for DNAs, flows, and templates in the RACI. Celia's platform work and the operational rhythm of Academy delivery should consolidate here:</p>
+                <ul>
+                    <li>All Typeform assessment build and maintenance</li>
+                    <li>Osiris product IDs and Platform shell setup for every program</li>
+                    <li>Lesson population, Zoom links, schedule, feedback links</li>
+                    <li>Quest shell maintenance across cohorts</li>
+                    <li>Automated certificate delivery setup and monitoring</li>
+                    <li>Summit recording uploads and ad-hoc content population</li>
+                    <li>Accreditation calendar — ICF, EMCC, CPD — with named renewal dates and escalation triggers</li>
+                    <li>Deep page template and production workflow</li>
+                    <li>DNA library for every recurring LX touchpoint (intro call, briefing email, feedback call, etc.)</li>
+                </ul>
+
+                <h4>F. What can be absorbed inside my function</h4>
+                <p>These are the only two people inside my org with capacity to take operational LX load — and only because both have explicit operational remits already:</p>
+                <p><strong>Matt Wong</strong> — Senior Creative Operations Specialist (B3, promoted):</p>
+                <ul>
+                    <li>LX delivery rhythm: capacity planning, dashboards, and governance for the Academy delivery calendar</li>
+                    <li>Vendor strategy for any LX tooling (Typeform, Platform, accreditation bodies)</li>
+                    <li>Cross-functional ops interface with Janja/Yana to ensure the Academy delivery system stays governed</li>
+                </ul>
+                <p><strong>Anna Flankini:</strong></p>
+                <ul>
+                    <li>Osiris ID creation, Platform / Quest shell builds, lesson population, schedule and Zoom link setup</li>
+                    <li>Content uploads — Summit recordings, ad-hoc content population</li>
+                    <li>Could pair with or backstop Yana on Celia's former platform work</li>
+                </ul>
+                <p><em>Note: this only works if both Matt and Anna are explicitly scoped into Academy ops as part of their objectives, not as silent overspill. If Academy is going to consume their cycles, Jaideep needs to own the partnership at director level with me, and the work needs to appear on their OKRs.</em></p>
+
+                <h4>G. What moves to AI / automation (with named owner)</h4>
+                <p>The "no new hires, AI is shrinking us" framing forces this category to be real, not aspirational:</p>
+                <ul>
+                    <li>Briefing email generation from student progress data — automated, AR reviews and sends</li>
+                    <li>NPS verbatim clustering and root-cause surfacing — automated weekly digest</li>
+                    <li>Accreditation deadline tracking and reminders — calendared workflow</li>
+                    <li>Author pack checklist compliance tracking — automated against contract clauses</li>
+                    <li>Deep page draft generation from session data — Ops finalises</li>
+                </ul>
+                <p>Matt Wong is the natural owner of the AI tooling layer across Academy ops, given his existing AI-augmented ops remit.</p>
+
+                <h3>What "Done" Looks Like</h3>
+                <p>A successful redistribution produces:</p>
+                <ol>
+                    <li>A named owner for <strong>every line</strong> of Fran's JD and every line of Celia's inherited tasks. No orphan items.</li>
+                    <li>Gareth's calendar contains LX work at ≤ 1 day per week in steady state.</li>
+                    <li>Program NPS accountability is matched to delivery authority — either both with me with the right team underneath, or NPS moves to Jaideep with me as curriculum architect.</li>
+                    <li>Accreditation has a named owner with a documented calendar and an escalation point.</li>
+                    <li>Celia's platform work has a named owner outside Creative — preferably Janja/Yana with Anna Flankini backstopping.</li>
+                    <li>Matt Wong's Academy ops scope is on his OKRs, not informal overspill.</li>
+                    <li>Authors continue to be briefed and held to standard, with no degradation in curriculum quality.</li>
+                </ol>
+
+                <h3>The Asks</h3>
+                <ol>
+                    <li><strong>Approve the redistribution map above</strong> as the operating model for LX going forward.</li>
+                    <li><strong>Reassign Celia's platform work explicitly to Janja/Yana</strong>, with Anna Flankini as the backstop inside my org, on the explicit understanding that this is an Academy ops function and not Creative.</li>
+                    <li><strong>Confirm Matt Wong's Academy ops scope</strong> at director level with Jaideep, so it appears on his OKRs and is governed properly.</li>
+                    <li><strong>Resolve the NPS accountability question:</strong> either I own it with the team underneath, or it moves to Academy leadership with me as curriculum architect. The current default — KPI with me, delivery with everyone else — is unstable.</li>
+                    <li><strong>Acknowledge AI / automation as a named worker</strong> in the model, with Matt Wong owning the tooling layer.</li>
+                    <li><strong>Lock the transition plan before Fran exits</strong>, not after.</li>
+                </ol>
+
+                <h3>What I'm Not Asking For</h3>
+                <ul>
+                    <li>A new hire. The proposal is a redistribution, not a headcount request.</li>
+                    <li>Relief from architectural ownership of Learning Experience. I will own curriculum, methodology, and creative standards across Academy. That is a Creative Director's job.</li>
+                    <li>A reduction in expectation on creative outcomes from my existing function. The point of this memo is to protect those outcomes.</li>
+                </ul>
+
+                <h3>Bottom Line</h3>
+                <p>I can carry the architecture and the standard. I cannot carry the operations. The Academy team — AR, Host, CX, and central Ops — already owns 80% of what's being labelled as "Fran's work to absorb." This memo simply names it. The remaining 20% is either AI-automatable or sits cleanly with Matt and Anna inside my function, provided that scope is made explicit and resourced on their OKRs.</p>
+                <p>If we structure it this way, the company keeps a Creative Director delivering at the strategic and architectural level — which is what Mindvalley needs from this role. If we don't, the company gets a Creative Director doing Typeform setups and weekly student check-ins, and the creative function — and the LX function — both degrade.</p>
+                <p>The question for Jaideep, Vishen, and Dario is not <em>whether</em> this work gets redistributed. The question is <em>which version of redistribution they want to authorise</em>. This memo proposes one. I'm open to alternatives, provided they don't quietly default to "Gareth absorbs it."</p>
             </div>
         </div>
 
