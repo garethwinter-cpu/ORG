@@ -473,6 +473,23 @@
         .badge.new { background: #e0f2f1; color: #00695c; }
         .badge.contractor { background: #f3e5f5; color: #7b1fa2; }
         .badge.vendor { background: #fff8e1; color: #ef6c00; }
+        .scope-tags { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; margin-top: 8px; }
+        .scope-tag {
+            display: inline-block;
+            font-size: 9px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: white;
+            text-transform: none;
+            letter-spacing: 0.2px;
+            line-height: 1.2;
+        }
+        .scope-tag.campaigns { background: #e91e63; }
+        .scope-tag.pathways { background: #7e57c2; }
+        .scope-tag.content { background: #1e88e5; }
+        .scope-tag.paid-vsl { background: #f9a825; color: #4a3700; }
+        .scope-tag.cbo { background: #5e35b1; }
 
         /* Before chart specific */
         .before-tree { display: flex; flex-direction: column; gap: 8px; text-align: left; padding: 20px; }
@@ -654,6 +671,14 @@
 
                 <h3>ORG Structure</h3>
                 <p style="font-size: 12px; color: #666; margin-top: -8px;">Source: BambooHR — Content, Advertising, Brand and Marketing structure</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 12px 0 16px; font-size: 11px;">
+                    <strong style="color: #555; margin-right: 4px;">Scope legend:</strong>
+                    <span class="scope-tag campaigns">Campaigns</span>
+                    <span class="scope-tag pathways">Pathways</span>
+                    <span class="scope-tag content">Content Production</span>
+                    <span class="scope-tag paid-vsl">Paid Masterclass &amp; VSL</span>
+                    <span class="scope-tag cbo">Creative Business Operations</span>
+                </div>
                 <div class="org-chart">
                     <!-- DIRECTOR -->
                     <div class="org-box director">
@@ -674,8 +699,10 @@
                                 <!-- JASON ROPER -->
                                 <div class="team-group">
                                     <div class="org-box purple" style="border-radius: 10px;">
+                                        <span class="badge contractor" style="position:absolute;top:8px;right:8px;">contractor</span>
                                         <div class="name">Jason Roper</div>
                                         <div class="role">Video Editor</div>
+                                        <div class="scope-tags"><span class="scope-tag campaigns">Campaigns</span></div>
                                     </div>
                                 </div>
 
@@ -684,27 +711,34 @@
                                     <div class="org-box purple" style="border-radius: 10px 10px 0 0;">
                                         <div class="name">Titus Thana Raj</div>
                                         <div class="role">VSL Editing Team Manager</div>
+                                        <div class="scope-tags"><span class="scope-tag paid-vsl">Paid Masterclass &amp; VSL</span></div>
                                     </div>
                                     <div class="team-members">
                                         <div class="org-box member">
                                             <div class="name">Marwah Al-Attraqchi</div>
                                             <div class="role">Senior Cinematographer &amp; Video Editor</div>
+                                            <div class="scope-tags"><span class="scope-tag paid-vsl">Paid Masterclass &amp; VSL</span></div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Shan K. Palanival</div>
                                             <div class="role">Senior Video Editor</div>
+                                            <div class="scope-tags"><span class="scope-tag pathways">Pathways</span></div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Yuthika Peiris</div>
                                             <div class="role">Senior Video Editor</div>
+                                            <div class="scope-tags"><span class="scope-tag pathways">Pathways</span></div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Miguel Alvarez</div>
                                             <div class="role">Senior Video Content Producer</div>
+                                            <div class="scope-tags"><span class="scope-tag campaigns">Campaigns</span></div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Taaniel Raukas</div>
                                             <div class="role">Video Editor</div>
+                                            <span class="badge contractor">contractor</span>
+                                            <div class="scope-tags"><span class="scope-tag campaigns">Campaigns</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -722,24 +756,35 @@
                                     <div class="org-box orange" style="border-radius: 10px 10px 0 0;">
                                         <div class="name">Khairul Johari</div>
                                         <div class="role">Head of Film Production</div>
+                                        <div class="scope-tags">
+                                            <span class="scope-tag campaigns">Campaigns</span>
+                                            <span class="scope-tag content">Content Production</span>
+                                        </div>
                                     </div>
                                     <div class="team-members">
                                         <div class="org-box member">
                                             <div class="name">Leonardo Govoni</div>
                                             <div class="role">Senior Line Producer</div>
                                             <span class="badge contractor">contractor</span>
+                                            <div class="scope-tags"><span class="scope-tag content">Content Production</span></div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Kuhan Kunasegaran</div>
                                             <div class="role">Senior Video Editor II</div>
+                                            <div class="scope-tags"><span class="scope-tag campaigns">Campaigns</span></div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Charuk Ong Chiang</div>
                                             <div class="role">Senior Motion Artist &amp; Video Editor</div>
+                                            <div class="scope-tags"><span class="scope-tag campaigns">Campaigns</span></div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Nadir Salam</div>
                                             <div class="role">Production Lead</div>
+                                            <div class="scope-tags">
+                                                <span class="scope-tag campaigns">Campaigns</span>
+                                                <span class="scope-tag content">Content Production</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -749,19 +794,29 @@
                                     <div class="org-box orange" style="border-radius: 10px 10px 0 0;">
                                         <div class="name">Jia Wen Liu</div>
                                         <div class="role">Post-Production Lead</div>
+                                        <div class="scope-tags"><span class="scope-tag content">Content Production</span></div>
                                     </div>
                                     <div class="team-members">
                                         <div class="org-box member">
                                             <div class="name">Mildred Michael</div>
                                             <div class="role">Senior Video Editor</div>
+                                            <div class="scope-tags"><span class="scope-tag content">Content Production</span></div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Shan P Purana Vellu</div>
                                             <div class="role">Motion Graphic Specialist</div>
+                                            <div class="scope-tags">
+                                                <span class="scope-tag campaigns">Campaigns</span>
+                                                <span class="scope-tag content">Content Production</span>
+                                            </div>
                                         </div>
                                         <div class="org-box member">
                                             <div class="name">Paul Hanna</div>
                                             <div class="role">Lead Editor</div>
+                                            <div class="scope-tags">
+                                                <span class="scope-tag pathways">Pathways</span>
+                                                <span class="scope-tag content">Content Production</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -778,7 +833,7 @@
                                     <div class="org-box pink" style="border-radius: 10px;">
                                         <div class="name">Matt Wong</div>
                                         <div class="role">Senior Creative Operations Specialist</div>
-                                        <div class="outcome">Creative Business Operations</div>
+                                        <div class="scope-tags"><span class="scope-tag cbo">Creative Business Operations</span></div>
                                     </div>
                                 </div>
 
@@ -787,7 +842,7 @@
                                         <div class="name">Anna Francini</div>
                                         <div class="role">Content Operations &amp; Localization</div>
                                         <span class="badge vendor">vendor — not FTE</span>
-                                        <div class="outcome">Platform builds, shells, localization &amp; content ops</div>
+                                        <div class="scope-tags"><span class="scope-tag cbo">Creative Business Operations</span></div>
                                     </div>
                                 </div>
 
