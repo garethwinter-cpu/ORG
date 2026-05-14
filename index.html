@@ -176,10 +176,9 @@
         /* Colour-code each tab */
         .tab-button:nth-child(1).active { background: linear-gradient(135deg, var(--tab-blue), var(--tab-blue-dark)); }
         .tab-button:nth-child(2).active { background: linear-gradient(135deg, var(--tab-red), var(--tab-red-dark)); }
-        .tab-button:nth-child(3).active { background: linear-gradient(135deg, var(--tab-orange), var(--tab-orange-dark)); }
-        .tab-button:nth-child(4).active { background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); }
-        .tab-button:nth-child(5).active { background: linear-gradient(135deg, var(--tab-teal), var(--tab-teal-dark)); }
-        .tab-button:nth-child(6).active { background: linear-gradient(135deg, var(--tab-blue), var(--tab-blue-light)); }
+        .tab-button:nth-child(3).active { background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); }
+        .tab-button:nth-child(4).active { background: linear-gradient(135deg, var(--tab-teal), var(--tab-teal-dark)); }
+        .tab-button:nth-child(5).active { background: linear-gradient(135deg, var(--tab-blue), var(--tab-blue-light)); }
 
         .tab-content {
             display: none;
@@ -709,7 +708,6 @@
         <div class="tab-bar">
             <button class="tab-button active" onclick="showTab(0)">Team ORG Structure</button>
             <button class="tab-button" onclick="showTab(5)">LX Absorption Risk</button>
-            <button class="tab-button" onclick="showTab(1)">Learning Experience Pillar</button>
             <button class="tab-button" onclick="showTab(2)">Gareth JD (Current)</button>
             <button class="tab-button" onclick="showTab(3)">Gareth JD (Proposed)</button>
             <button class="tab-button" onclick="showTab(4)">Matt Wong JD</button>
@@ -740,7 +738,6 @@
                     <li><strong>Titus Thana Raj —</strong> Marketing Production (organic + paid editing)</li>
                     <li><strong>Jason Roper —</strong> Creative Excellence (direct to Gareth — special projects, quality standards)</li>
                     <li><strong>Matt Wong —</strong> Creative Operations (governance, capacity, vendor strategy)</li>
-                    <li><strong>Fran Facio Crespo —</strong> Learning Experience & Transformation Design</li>
                 </ul>
                 <p>Every creative function — from customer-facing content and marketing assets to learning experience design and creative operations — sits under one creative leader with one set of standards, shared tooling, and a single point of accountability for output quality.</p>
 
@@ -930,6 +927,14 @@
                                     </div>
                                 </div>
 
+                                <div class="team-group">
+                                    <div class="org-box" style="background: #f5f5f5; border: 1.5px dashed #bbb; border-radius: 10px;">
+                                        <div class="name" style="color: #777;">Hassaan Islam</div>
+                                        <div class="role" style="color: #999;">Creative Production &amp; Content Ops</div>
+                                        <span class="badge" style="background:#ffebee;color:#c62828;">leaving — date TBC</span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
@@ -1086,11 +1091,6 @@
                             <td>Situational deputising: Jason Roper covers creative quality decisions; Khairul Johari covers production operations. Both have direct access to Gareth and can escalate. Matt Wong holds operational continuity through dashboards and process governance.</td>
                         </tr>
                         <tr>
-                            <td><strong>LX team depth vs. expanded mandate</strong></td>
-                            <td>Fran's team is 3 people. As the LX mandate expands beyond Mastery to cover Quests, Certifications, meditations, premium programmes, and webinars, the current headcount may not sustain the scope.</td>
-                            <td>Acknowledged as a future investment. Phase 1 focuses on integrating the existing team and proving the model. A hire request will follow once the expanded scope is live and workload data confirms the gap.</td>
-                        </tr>
-                        <tr>
                             <td><strong>Marketing Production cultural integration</strong></td>
                             <td>Titus's team comes from a performance-marketing environment (conversion, ROAS, speed). The creative function prioritises craft, quality, and brand consistency. Different instincts could create friction.</td>
                             <td>This is seen as additive, not adversarial. Titus brings a commercial lens that strengthens the creative function's relevance to business outcomes. Shared creative standards, tooling, and regular cross-team reviews will align the culture over time. Jason's creative excellence remit helps set the bar across all output.</td>
@@ -1112,7 +1112,7 @@
                         </tr>
                         <tr>
                             <td><strong>Knowledge concentration risk</strong></td>
-                            <td>Several roles are single-person functions: Jason (creative excellence), Matt (operations), Fran (LX leadership). Losing any one of them creates a significant capability gap.</td>
+                            <td>Several roles are single-person functions: Jason (creative excellence) and Matt (operations). Losing either creates a significant capability gap.</td>
                             <td>All key roles have documented DNAs, ensuring knowledge is preserved and transferable. The succession table identifies backfill priorities, and the unified structure enables cross-training so adjacent leaders can cover short-term gaps.</td>
                         </tr>
                     </tbody>
@@ -1452,242 +1452,6 @@
             </div>
         </div>
 
-
-        <!-- TAB 4: LEARNING EXPERIENCE PILLAR -->
-        <div id="tab1" class="tab-content">
-            <div class="content-wrapper">
-                <button class="copy-button" onclick="copyTabContent(1)">Copy to Clipboard</button>
-                <span class="copy-status" id="copy-status-1">Copied!</span>
-
-                <h2>Pillar 2: Learning Experience & Transformation Design — Integration Plan</h2>
-
-                <p><strong>Author:</strong> Gareth Winter, Creative Director</p>
-                <p><strong>Date:</strong> 1 April 2026</p>
-
-                <h3>Why This Pillar Exists</h3>
-                <p>Fran Facio Crespo and her team currently lead learning experience design and transformation coaching for Mindvalley's Mastery programmes and coaching network under Jaideep Chagger. Separately, Mindvalley's content team previously included Learning Experience Producers (LEPs) whose remit covered Quests and Quest meditations — that function was removed, leaving a gap in the creative function.</p>
-
-                <p>By bringing Fran's team into creative, Gareth steps into a role where he leads transformation design across all programme types: Quests, Mastery, Certifications, meditations, premium programmes, stage talks, and webinars. The team's mandate expands beyond Mastery to own learning experience design across the full membership — Quests, Mastery, Certifications, meditations, premium programmes, stage talks, and webinars. Mastery continues to be served, but within a broader remit where Gareth leads transformation design across all programme types and Fran's team is resourced to support the full portfolio.</p>
-
-                <p><strong>The strategic rationale is simple: retention is a creative problem.</strong> Members don't stay because the cinematography is beautiful. They stay because they transform. Bringing learning experience design into the creative function with Gareth as owner means content quality and transformation quality are designed together — not in parallel, not as an afterthought.</p>
-
-                <h4>What Mastery Gets in Return</h4>
-
-                <p>This isn't a one-way transfer. Bringing Fran's team into creative gives the Mastery ecosystem something it has never had: a <strong>creative director's lens on how Mastery programmes are executed, presented, and designed</strong>.</p>
-
-                <p>Today, Mastery programmes are shaped primarily through a learning experience and coaching lens — which is strong on pedagogy and transformation. What they don't currently benefit from is the filmmaker's eye, the creative director's instinct for storytelling, pacing, visual design, and production quality that Gareth brings to every piece of content his team touches.</p>
-
-                <p>Under this structure, Mastery gets:</p>
-                <ul>
-                    <li><strong>Creative direction on execution and presentation</strong> — how programmes look, feel, and flow from a cinematic and design standpoint, not just a pedagogical one</li>
-                    <li><strong>Access to the full production pipeline</strong> — Film, Post-Production, Design, and Creative Ops resources that can elevate how Mastery content is produced and delivered</li>
-                    <li><strong>A storytelling framework</strong> — the same narrative craft applied to Quests, Certifications, and premium content now shapes how Mastery journeys are structured and experienced</li>
-                    <li><strong>Higher output quality</strong> — creative standards, production values, and design consistency applied to the Mastery ecosystem at the same level as Mindvalley's flagship content</li>
-                </ul>
-
-                <p>In short: Gareth's creative function gains learning experience expertise across the business. Mastery gains a creative lens that strengthens the quality of everything it produces. Both sides benefit.</p>
-
-                <h3>What Moves</h3>
-
-                <h4>Team Transfer</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Current Role</th>
-                            <th>New Reporting Line</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Fran Facio Crespo</td>
-                            <td>Senior Learning Experience Designer (under Jaideep Chagger)</td>
-                            <td>Senior Learning Experience Designer → Gareth Winter</td>
-                        </tr>
-                        <tr>
-                            <td>Celia Oviedo Guzman</td>
-                            <td>Learning Experience Designer</td>
-                            <td>→ Fran Facio Crespo</td>
-                        </tr>
-                        <tr>
-                            <td>Aarti Mehta-Nayyar</td>
-                            <td>EV Coach</td>
-                            <td>→ Fran Facio Crespo</td>
-                        </tr>
-                        <tr>
-                            <td>Elisa Tidswell</td>
-                            <td>EV Coach</td>
-                            <td>→ Fran Facio Crespo</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>Fran Facio Crespo's Mandate</h3>
-
-                <p><strong>Title:</strong> Senior Learning Experience Designer</p>
-                <p><strong>Reports to:</strong> Gareth Winter (Creative Director)</p>
-                <p><strong>Outcome owned:</strong> How users transform</p>
-
-                <h4>Core accountabilities:</h4>
-                <ul>
-                    <li><strong>Curriculum design:</strong> Architect programme curricula from source material (author content, books, research, interviews, transcripts) into structured learning journeys with clear pedagogical logic and engagement mechanics.</li>
-                    <li><strong>Transformation journey architecture:</strong> Design the end-to-end member transformation arc — from onboarding through mastery — ensuring every programme moves members through a deliberate sequence of awareness, practice, integration, and habit formation.</li>
-                    <li><strong>Mastery programmes and coaching network:</strong> Continue to lead the learning experience design and transformation coaching for Mastery programmes and the EV coaching network — this is the team's core responsibility and continues unchanged under Gareth's leadership. Design for completion, retention, re-engagement, and measurable behaviour change.</li>
-                    <li><strong>Cross-pillar collaboration:</strong> Work directly with Film Production (Khairul) and Post-Production (Jia Wen Liu) to ensure that curriculum design informs how content is shot, structured, and delivered — not the other way around. Learning Experience shapes the brief; Content Engine executes it.</li>
-                    <li><strong>Programme coordination:</strong> Manage the operational side of programme development — timelines, stakeholder alignment, author collaboration, and delivery milestones.</li>
-                </ul>
-
-                <h3>How Pillar 2 Connects to Pillar 1</h3>
-
-                <p>The two pillars are not independent. They are designed to operate as a connected system:</p>
-
-                <div style="display: flex; gap: 0; margin: 20px 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--color-border-soft);">
-                    <div style="flex: 1; background: linear-gradient(135deg, #e0f5f0, #ecfbf7); padding: 20px;">
-                        <div style="font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #00796b; margin-bottom: 14px;">Pillar 2 — Learning Experience</div>
-                        <div style="font-size: 13px; color: #333; line-height: 2;">
-                            Curriculum design & briefs<br>
-                            Transformation arc & structure<br>
-                            Engagement mechanics<br>
-                            Programme coordination<br>
-                            Member feedback & outcomes
-                        </div>
-                    </div>
-                    <div style="display: flex; flex-direction: column; justify-content: center; background: #f5f5f5; padding: 20px 16px; gap: 8px;">
-                        <div style="font-size: 18px; color: #6C3FC5;">→</div>
-                        <div style="font-size: 18px; color: #6C3FC5;">→</div>
-                        <div style="font-size: 18px; color: #6C3FC5;">→</div>
-                        <div style="font-size: 18px; color: #6C3FC5;">→</div>
-                        <div style="font-size: 18px; color: #6C3FC5;">→</div>
-                    </div>
-                    <div style="flex: 1; background: linear-gradient(135deg, #e8f0fe, #f0f6ff); padding: 20px;">
-                        <div style="font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #1565c0; margin-bottom: 14px;">Pillar 1 — Content Engine</div>
-                        <div style="font-size: 13px; color: #333; line-height: 2;">
-                            Informs shoot planning (Khairul)<br>
-                            Shapes edit sequencing (Jia Wen Liu)<br>
-                            Feeds campaign messaging<br>
-                            Syncs with Creative Ops (Matt Wong)<br>
-                            Informs next-cycle commissioning
-                        </div>
-                    </div>
-                </div>
-
-                <p><strong>The key principle:</strong> Learning Experience shapes what gets built. Content Engine builds it to the highest standard. Neither pillar succeeds without the other.</p>
-
-                <h3>What This Changes</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Before (LEPs in Content)</th>
-                            <th>Gap (LEPs Removed)</th>
-                            <th>After (Pillar 2)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>LEPs sat inside the content team</td>
-                            <td>Learning experience design separated from content production</td>
-                            <td>Learning experience design reunited with content under Gareth</td>
-                        </tr>
-                        <tr>
-                            <td>Fran's team: Mastery programmes and coaching network only (under Jaideep)</td>
-                            <td>LX separated from creative; no unified ownership across all programme types</td>
-                            <td>Scope: Fran's team continues Mastery work; Gareth leads LX across all programme types — Quests, Certifications, meditations, premium, stage talks, webinars — with unified creative oversight</td>
-                        </tr>
-                        <tr>
-                            <td>LEPs worked alongside production teams</td>
-                            <td>Production teams operated without transformation input</td>
-                            <td>Fran Facio Crespo's team collaborates with Film and Post from the brief stage</td>
-                        </tr>
-                        <tr>
-                            <td>Curriculum design informed by content context</td>
-                            <td>Curriculum design disconnected from how content was shot and edited</td>
-                            <td>Curriculum-first workflow: LX brief → production brief → shoot → edit → delivery</td>
-                        </tr>
-                        <tr>
-                            <td>Transformation quality was a shared concern</td>
-                            <td>Transformation quality became no one's explicit outcome</td>
-                            <td>Transformation quality is Fran Facio Crespo's defined outcome</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3>The Opportunity: Unified Content Function</h3>
-
-                <p>With Fran Facio Crespo's team inside creative, Gareth's function can now service the full spectrum of Mindvalley's content needs under one roof:</p>
-
-                <ul>
-                    <li><strong>Quests</strong> — curriculum design, filming, post-production, delivery</li>
-                    <li><strong>Mastery programmes</strong> — advanced learning architecture, deep transformation arcs</li>
-                    <li><strong>Certifications</strong> — ICF-accredited coach training programmes (Life, Business, Hypnotherapy, Holobody, 10x Fitness), curriculum design, and certification delivery</li>
-                    <li><strong>Meditation experiences</strong> — guided experience design, audio-visual production</li>
-                    <li><strong>Premium programmes</strong> — high-touch learning journeys, bespoke production</li>
-                    <li><strong>Stage talks</strong> — event content capture, transformation framing</li>
-                    <li><strong>Webinars</strong> — live learning experience design, production support</li>
-                </ul>
-
-                <p>This eliminates silos. Every content format benefits from the same creative standards, the same production pipeline, and — critically — the same learning experience rigour. The team is no longer fragmented across functions; it operates as one system.</p>
-
-                <h3>Success Criteria</h3>
-
-                <div class="metric-category">
-                    <h4>Within 90 days:</h4>
-                    <ul>
-                        <li>Fran Facio Crespo and team fully integrated into Gareth's org with clear reporting lines</li>
-                        <li>First programme designed using the curriculum-first workflow (LX brief → production brief → shoot → edit → delivery)</li>
-                        <li>Cross-pillar working rhythm established with Film (Khairul) and Post-Production (Jia Wen Liu)</li>
-                    </ul>
-                </div>
-
-                <div class="metric-category">
-                    <h4>Within 6 months:</h4>
-                    <ul>
-                        <li>Every new programme — regardless of format — has a documented transformation arc and pedagogical framework before production begins</li>
-                        <li>Measurable improvement in programme completion rates for content designed under the new model</li>
-                        <li>Member feedback reflects a more guided, intentional learning experience</li>
-                        <li>Gareth and Fran's team collaborating across content types beyond Mastery (Quests, Certifications, meditations, premium, stage talks, webinars) as part of unified creative function</li>
-                    </ul>
-                </div>
-
-                <div class="metric-category">
-                    <h4>Within 12 months:</h4>
-                    <ul>
-                        <li>Transformation quality becomes a core competitive differentiator for Mindvalley</li>
-                        <li>Retention data shows measurable impact from curriculum-designed content vs. legacy content</li>
-                        <li>The LX pillar is resourced to support the full programme portfolio without bottlenecks</li>
-                        <li>The unified content function is recognised internally as the model for how Mindvalley produces and delivers transformative experiences</li>
-                    </ul>
-                </div>
-
-                <h3>Benefits of This Integration</h3>
-
-                <div class="outcome-grid">
-                    <div class="outcome-card">
-                        <strong>Unified Transformation Leadership</strong>
-                        For the first time, one creative leader owns transformation quality across the entire business — Quests, Mastery, Certifications, meditations, premium, stage talks, and webinars. No fragmented ownership, no gaps.
-                    </div>
-                    <div class="outcome-card">
-                        <strong>Creative Lens on Mastery</strong>
-                        Mastery programmes gain access to a filmmaker and creative director's perspective on execution, presentation, storytelling, and design — elevating the quality of the Mastery ecosystem beyond pedagogy alone.
-                    </div>
-                    <div class="outcome-card">
-                        <strong>Full Production Pipeline for Mastery</strong>
-                        Fran's team gains direct access to Film, Post-Production, Design, and Creative Ops resources. Mastery content can now be produced at the same standard as Mindvalley's flagship Quests, Certifications, and premium products.
-                    </div>
-                    <div class="outcome-card">
-                        <strong>Curriculum-First Content Design</strong>
-                        Learning experience briefs inform how content is shot, structured, and delivered — not the other way around. Transformation is designed in from the start, not retrofitted.
-                    </div>
-                    <div class="outcome-card">
-                        <strong>Retention as a Creative Outcome</strong>
-                        With transformation quality and content quality under one roof, the team can design for completion, habit formation, and long-term retention as a single system — not two functions working in parallel.
-                    </div>
-                    <div class="outcome-card">
-                        <strong>Operational Coherence</strong>
-                        Matt Wong's creative operations function covers both pillars — capacity planning, vendor strategy, and workflow governance apply to Mastery and Certification production with the same rigour as Quests and campaigns.
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
         <!-- TAB 2: MATT WONG JD -->
