@@ -6,6 +6,90 @@
     <title>Mindvalley Creative — Restructure & Job Descriptions</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            /* ── Brand ─────────────────────────────────────────── */
+            --color-primary: #6C3FC5;
+            --color-primary-dark: #5a2fa8;
+            --color-primary-tint: #ede3f7;
+            --color-primary-subtle: #f5eefb;
+
+            /* ── Neutrals ──────────────────────────────────────── */
+            --color-bg: #f0f0f5;
+            --color-surface: #ffffff;
+            --color-surface-alt: #fafafa;
+            --color-fg: #1A1A1A;
+            --color-fg-muted: #555;
+            --color-fg-subtle: #888;
+            --color-border: #E5E5E0;
+            --color-border-subtle: #ededed;
+            --color-border-soft: #e0e0e0;
+            --color-heading-navy: #1A3C5E;
+            --color-surface-tint: #f5f5f5;
+
+            /* ── Pillar accents (org chart) ────────────────────── */
+            --pillar-marketing: #6C3FC5;
+            --pillar-marketing-tint: #f0e6fb;
+            --pillar-marketing-border: #b89cdc;
+            --pillar-content: #ef6c00;
+            --pillar-content-tint: #fff3e0;
+            --pillar-content-border: #ffb74d;
+            --pillar-creative-ops: #c2185b;
+            --pillar-creative-ops-tint: #fce4ec;
+            --pillar-creative-ops-border: #f48fb1;
+            --pillar-learning: #00796b;
+            --pillar-learning-tint: #e0f5f0;
+            --pillar-learning-border: #80cbc4;
+
+            /* ── Tab accents (memo color-coding) ───────────────── */
+            --tab-blue: #1565c0;
+            --tab-blue-dark: #0d47a1;
+            --tab-blue-light: #1e88e5;
+            --tab-orange: #ff9800;
+            --tab-orange-dark: #f57c00;
+            --tab-teal: #00796b;
+            --tab-teal-dark: #009688;
+            --tab-red: #c62828;
+            --tab-red-dark: #8e0000;
+
+            /* ── Semantic ──────────────────────────────────────── */
+            --color-success: #2e7d32;
+            --color-success-tint: #e8f5e9;
+            --color-warn: #e65100;
+            --color-warn-tint: #fff3e0;
+            --color-danger: #c62828;
+            --color-danger-tint: #ffebee;
+
+            /* ── Scope tags (BambooHR map) ─────────────────────── */
+            --tag-campaigns: #e91e63;
+            --tag-pathways: #7e57c2;
+            --tag-content: #1e88e5;
+            --tag-paid-vsl: #f9a825;
+            --tag-paid-vsl-fg: #4a3700;
+            --tag-cbo: #5e35b1;
+
+            /* ── Typography ────────────────────────────────────── */
+            --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-size-base: 14px;
+            --line-height-base: 1.6;
+
+            /* ── Radii ─────────────────────────────────────────── */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+
+            /* ── Spacing scale ─────────────────────────────────── */
+            --space-xs: 4px;
+            --space-sm: 8px;
+            --space-md: 16px;
+            --space-lg: 24px;
+            --space-xl: 32px;
+
+            /* ── Shadows ───────────────────────────────────────── */
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.13);
+            --shadow-lg: 0 0 40px rgba(0,0,0,0.08);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -13,22 +97,22 @@
         }
 
         body {
-            font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: #f0f0f5;
-            color: #333;
-            line-height: 1.6;
+            font-family: var(--font-sans);
+            background-color: var(--color-bg);
+            color: var(--color-fg);
+            line-height: var(--line-height-base);
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background-color: white;
+            background-color: var(--color-surface);
             min-height: 100vh;
-            box-shadow: 0 0 40px rgba(0,0,0,0.08);
+            box-shadow: var(--shadow-lg);
         }
 
         header {
-            background: linear-gradient(135deg, #6C3FC5 0%, #5a2fa8 100%);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
             color: white;
             padding: 48px 40px 32px;
             text-align: center;
@@ -56,14 +140,14 @@
             display: flex;
             padding: 16px 20px;
             gap: 10px;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid var(--color-border-soft);
             box-shadow: 0 2px 12px rgba(0,0,0,0.06);
         }
 
         .tab-button {
             flex: 1;
             padding: 18px 20px;
-            border: 2px solid #e0e0e0;
+            border: 2px solid var(--color-border-soft);
             background: #fafafa;
             cursor: pointer;
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -90,12 +174,12 @@
         }
 
         /* Colour-code each tab */
-        .tab-button:nth-child(1).active { background: linear-gradient(135deg, #1565c0, #0d47a1); }
-        .tab-button:nth-child(2).active { background: linear-gradient(135deg, #c62828, #8e0000); }
-        .tab-button:nth-child(3).active { background: linear-gradient(135deg, #ff9800, #f57c00); }
-        .tab-button:nth-child(4).active { background: linear-gradient(135deg, #6C3FC5, #5a2fa8); }
-        .tab-button:nth-child(5).active { background: linear-gradient(135deg, #00796b, #009688); }
-        .tab-button:nth-child(6).active { background: linear-gradient(135deg, #1565c0, #1e88e5); }
+        .tab-button:nth-child(1).active { background: linear-gradient(135deg, var(--tab-blue), var(--tab-blue-dark)); }
+        .tab-button:nth-child(2).active { background: linear-gradient(135deg, var(--tab-red), var(--tab-red-dark)); }
+        .tab-button:nth-child(3).active { background: linear-gradient(135deg, var(--tab-orange), var(--tab-orange-dark)); }
+        .tab-button:nth-child(4).active { background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); }
+        .tab-button:nth-child(5).active { background: linear-gradient(135deg, var(--tab-teal), var(--tab-teal-dark)); }
+        .tab-button:nth-child(6).active { background: linear-gradient(135deg, var(--tab-blue), var(--tab-blue-light)); }
 
         .tab-content {
             display: none;
@@ -113,7 +197,7 @@
         }
 
         h2 {
-            color: #1A3C5E;
+            color: var(--color-heading-navy);
             font-size: 26px;
             font-weight: 700;
             margin-bottom: 20px;
@@ -126,7 +210,7 @@
         }
 
         h3 {
-            color: #1A3C5E;
+            color: var(--color-heading-navy);
             font-size: 18px;
             font-weight: 700;
             margin-top: 25px;
@@ -161,7 +245,7 @@
         }
 
         strong {
-            color: #1A3C5E;
+            color: var(--color-heading-navy);
             font-weight: 600;
         }
 
@@ -200,7 +284,7 @@
             border-collapse: collapse;
             margin-bottom: 20px;
             background: white;
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--color-border-soft);
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 6px rgba(0,0,0,0.04);
@@ -239,7 +323,7 @@
 
         .card {
             background: white;
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--color-border-soft);
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 20px;
@@ -309,29 +393,29 @@
             letter-spacing: 1px;
             color: white;
         }
-        .pillar-header.blue { background: linear-gradient(135deg, #1565c0, #1e88e5); }
-        .pillar-header.teal { background: linear-gradient(135deg, #00796b, #009688); }
-        .pillar-header.purple { background: linear-gradient(135deg, #6C3FC5, #8e5fd6); }
-        .pillar-header.orange { background: linear-gradient(135deg, #ef6c00, #ff9800); }
-        .pillar-header.pink { background: linear-gradient(135deg, #c2185b, #e91e63); }
+        .pillar-header.blue { background: linear-gradient(135deg, var(--tab-blue), var(--tab-blue-light)); }
+        .pillar-header.teal { background: linear-gradient(135deg, var(--pillar-learning), var(--tab-teal-dark)); }
+        .pillar-header.purple { background: linear-gradient(135deg, var(--pillar-marketing), #8e5fd6); }
+        .pillar-header.orange { background: linear-gradient(135deg, #ef6c00, var(--pillar-content)); }
+        .pillar-header.pink { background: linear-gradient(135deg, var(--pillar-creative-ops), var(--tag-campaigns)); }
         .org-box.purple {
-            background: linear-gradient(135deg, #f0e6fb, #f7eefc);
-            border: 1.5px solid #b89cdc;
+            background: linear-gradient(135deg, var(--pillar-marketing-tint), #f7eefc);
+            border: 1.5px solid var(--pillar-marketing-border);
             width: 100%;
         }
         .org-box.orange {
-            background: linear-gradient(135deg, #fff3e0, #fff8e1);
-            border: 1.5px solid #ffb74d;
+            background: linear-gradient(135deg, var(--pillar-content-tint), #fff8e1);
+            border: 1.5px solid var(--pillar-content-border);
             width: 100%;
         }
         .org-box.pink {
-            background: linear-gradient(135deg, #fce4ec, #fff0f5);
-            border: 1.5px solid #f48fb1;
+            background: linear-gradient(135deg, var(--pillar-creative-ops-tint), #fff0f5);
+            border: 1.5px solid var(--pillar-creative-ops-border);
             width: 100%;
         }
 
         .pillar-body {
-            border: 2px solid #e0e0e0;
+            border: 2px solid var(--color-border-soft);
             border-top: none;
             border-radius: 0 0 8px 8px;
             padding: 16px 12px;
@@ -344,20 +428,20 @@
 
         /* Org box card */
         .org-box {
-            border-radius: 10px;
+            border-radius: var(--radius-md);
             padding: 14px 16px;
             text-align: center;
             font-size: 12px;
             line-height: 1.45;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: var(--shadow-sm);
             transition: transform 0.15s, box-shadow 0.15s;
             position: relative;
         }
-        .org-box:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.13); }
+        .org-box:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 
         .org-box.director {
-            background: linear-gradient(135deg, #ede3f7, #f5eefb);
-            border: 2px solid #6C3FC5;
+            background: linear-gradient(135deg, var(--color-primary-tint), var(--color-primary-subtle));
+            border: 2px solid var(--color-primary);
             min-width: 260px;
             padding: 18px 24px;
         }
@@ -368,20 +452,20 @@
             min-width: 120px;
         }
         .org-box.teal {
-            background: linear-gradient(135deg, #e0f5f0, #ecfbf7);
-            border: 1.5px solid #80cbc4;
+            background: linear-gradient(135deg, var(--pillar-learning-tint), #ecfbf7);
+            border: 1.5px solid var(--pillar-learning-border);
             width: 190px;
         }
         /* Sub-team member boxes */
         .org-box.member {
-            background: #fff;
-            border: 1px solid #ddd;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
             width: 140px;
             min-width: 140px;
             padding: 10px 12px;
         }
         .org-box.member .name { font-size: 11px; font-weight: 600; }
-        .org-box.member .role { font-size: 10px; color: #777; }
+        .org-box.member .role { font-size: 10px; color: var(--color-fg-muted); }
         .org-box.member .outcome { font-size: 9px; }
         /* Team group container */
         .team-group {
@@ -431,7 +515,7 @@
         .org-box .name {
             font-weight: 700;
             font-size: 13px;
-            color: #1A3C5E;
+            color: var(--color-heading-navy);
             margin-bottom: 3px;
         }
         .org-box .role {
@@ -485,11 +569,11 @@
             letter-spacing: 0.2px;
             line-height: 1.2;
         }
-        .scope-tag.campaigns { background: #e91e63; }
-        .scope-tag.pathways { background: #7e57c2; }
-        .scope-tag.content { background: #1e88e5; }
-        .scope-tag.paid-vsl { background: #f9a825; color: #4a3700; }
-        .scope-tag.cbo { background: #5e35b1; }
+        .scope-tag.campaigns { background: var(--tag-campaigns); }
+        .scope-tag.pathways { background: var(--tag-pathways); }
+        .scope-tag.content { background: var(--tag-content); }
+        .scope-tag.paid-vsl { background: var(--tag-paid-vsl); color: var(--tag-paid-vsl-fg); }
+        .scope-tag.cbo { background: var(--tag-cbo); }
 
         /* Before chart specific */
         .before-tree { display: flex; flex-direction: column; gap: 8px; text-align: left; padding: 20px; }
@@ -498,7 +582,7 @@
         .before-node.level-1 { background: #f5f5f5; border-left: 3px solid #bbb; margin-left: 24px; }
         .before-node.level-2 { background: #fafafa; border-left: 3px solid #ddd; margin-left: 48px; }
         .before-node.level-3 { background: #fff; border-left: 3px solid #eee; margin-left: 72px; }
-        .before-node .node-name { font-weight: 700; color: #1A3C5E; white-space: nowrap; }
+        .before-node .node-name { font-weight: 700; color: var(--color-heading-navy); white-space: nowrap; }
         .before-node .node-role { color: #666; }
         .before-node .node-tag { font-size: 10px; background: #fff3e0; color: #e65100; padding: 1px 6px; border-radius: 3px; margin-left: 6px; white-space: nowrap; }
         .before-external { margin-top: 16px; padding-top: 16px; border-top: 2px dashed #e0e0e0; }
@@ -515,7 +599,7 @@
 
         .outcome-card {
             background: white;
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--color-border-soft);
             border-left: 4px solid #6C3FC5;
             padding: 16px;
             border-radius: 6px;
@@ -524,7 +608,7 @@
         .outcome-card strong {
             display: block;
             margin-bottom: 8px;
-            color: #1A3C5E;
+            color: var(--color-heading-navy);
         }
 
         .risk-mitigation {
@@ -541,7 +625,7 @@
 
         .section-divider {
             margin: 40px 0;
-            border-top: 2px solid #e0e0e0;
+            border-top: 2px solid var(--color-border-soft);
             padding-top: 20px;
         }
 
@@ -1457,7 +1541,7 @@
 
                 <p>The two pillars are not independent. They are designed to operate as a connected system:</p>
 
-                <div style="display: flex; gap: 0; margin: 20px 0; border-radius: 10px; overflow: hidden; border: 1px solid #e0e0e0;">
+                <div style="display: flex; gap: 0; margin: 20px 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--color-border-soft);">
                     <div style="flex: 1; background: linear-gradient(135deg, #e0f5f0, #ecfbf7); padding: 20px;">
                         <div style="font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #00796b; margin-bottom: 14px;">Pillar 2 — Learning Experience</div>
                         <div style="font-size: 13px; color: #333; line-height: 2;">
