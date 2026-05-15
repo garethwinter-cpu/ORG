@@ -1733,179 +1733,339 @@
                 </ul>
 
                 <h3>Today vs. Tomorrow — and the risks we accept</h3>
-                <p>This is the line-by-line view of what changes: who does what today, who does it tomorrow, what we stop doing, and the risk we explicitly accept by doing so. Where there's no risk, the cell says <em>"None"</em> — those are pure ownership transfers. Where there's a real trade-off, it's named here rather than buried.</p>
+                <p>This is the line-by-line view of what changes: who does what today, who does it tomorrow, what we stop doing, and the risk we explicitly accept by doing so.</p>
+                <p style="background: var(--color-primary-subtle); border-left: 4px solid var(--color-primary); padding: 12px 16px; border-radius: var(--radius-sm); font-size: 13px;"><strong>Anchored to the 28 April RACI.</strong> The author-lifecycle rows below map directly to Marianna's published RACI. Rows marked <span style="color: var(--color-danger); font-weight: 700;">⚠️</span> are where this proposal <em>moves</em> a responsibility the RACI places on LXD onto a different owner. Those five rows are the actual negotiation — everything else flows through unchanged. The full divergence summary sits below the table.</p>
 
                 <div style="overflow-x: auto;">
-                <table style="font-size: 13px;">
+                <table style="font-size: 12px; line-height: 1.5;">
                     <thead>
                         <tr>
-                            <th style="width: 20%;">Activity</th>
-                            <th style="width: 16%;">Today</th>
-                            <th style="width: 22%;">Tomorrow</th>
-                            <th style="width: 20%;">What we stop doing</th>
-                            <th style="width: 22%;">Risk we accept</th>
+                            <th style="width: 14%;">Activity</th>
+                            <th style="width: 10%;">RACI Ref</th>
+                            <th style="width: 17%;">Today (current state)</th>
+                            <th style="width: 23%;">Tomorrow (proposed — with cadence &amp; SLAs)</th>
+                            <th style="width: 14%;">What we stop doing</th>
+                            <th style="width: 22%;">Risk + mitigation / fallback</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr style="background: var(--color-primary-subtle);">
-                            <td colspan="5" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Curriculum &amp; architecture</td>
+                            <td colspan="6" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Curriculum &amp; architecture (protected — Gareth holds)</td>
                         </tr>
                         <tr>
-                            <td><strong>Curriculum architecture &amp; methodology</strong></td>
-                            <td>Fran (LXM)</td>
-                            <td>Gareth (CD, ~1 day/week)</td>
+                            <td><strong>Curriculum architecture &amp; 3-phase design</strong></td>
+                            <td>RACI §1, §2 — LXD R/A on curriculum logic</td>
+                            <td>Fran — bespoke per Mastery; informal cycle</td>
+                            <td><strong>Gareth.</strong> 1 design pass per Mastery at launch (≈3 working days), then ≤4 hours/week for sign-offs in steady state. Versioned curriculum artefact stored in Notion. <em>Fallback if Gareth unavailable:</em> design pass paused; no downstream owner can ship without sign-off.</td>
                             <td>Nothing — protected</td>
-                            <td>None on architecture itself</td>
+                            <td><strong>None on architecture.</strong> Risk lives in CD scope erosion if hours/week creep above 4. Tracked weekly via Matt's capacity dashboard; breach triggers escalation to Jaideep.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Methodology framework (per program)</strong></td>
+                            <td>Outside RACI</td>
+                            <td>Fran</td>
+                            <td><strong>Gareth.</strong> Defined once per program at launch. Revisions <em>only</em> at end-of-cohort retrospectives (every 8–12 weeks).</td>
+                            <td>Mid-cohort methodology changes (unless safety/legal)</td>
+                            <td>Less responsive to in-flight feedback. Mitigation: changes batched into retrospective cycle; emergency override path through Jaideep.</td>
                         </tr>
                         <tr>
                             <td><strong>Brief design &amp; quality standard</strong></td>
-                            <td>Fran</td>
-                            <td>Gareth — template defined once per Mastery</td>
+                            <td>RACI §2 — LXD R/A</td>
+                            <td>Fran — bespoke per session</td>
+                            <td><strong>Gareth.</strong> Version-controlled brief template per Mastery, updated only at end-of-cohort retrospectives. Authors receive the template from AR 14 days pre-session.</td>
                             <td>Bespoke per-session briefs</td>
-                            <td>An unfamiliar author may deliver off-brief on a rare edge case. Mitigated by clearer written template.</td>
+                            <td>Edge-case off-brief delivery from authors who don't read the template. Mitigation: AI-tracked compliance against brief checklist (Matt's tooling); AR escalates at T-7 if author hasn't acknowledged.</td>
                         </tr>
                         <tr>
                             <td><strong>Author shortlist sign-off (curriculum lens)</strong></td>
-                            <td>Fran (consulted)</td>
-                            <td>Gareth (sign-off only — AR scouts)</td>
-                            <td>Nothing</td>
-                            <td>None</td>
+                            <td>RACI §1 — LXD C; no outreach without sign-off</td>
+                            <td>Fran (consulted, often async)</td>
+                            <td><strong>Gareth.</strong> Written sign-off within 5 working days of AR's shortlist submission, against documented curriculum-fit criteria.</td>
+                            <td>Nothing — cadence improves</td>
+                            <td>None.</td>
                         </tr>
                         <tr>
-                            <td><strong>Curriculum decision when an author is replaced</strong></td>
+                            <td><strong>Curriculum sign-off on author replacement</strong></td>
+                            <td>RACI §2 — LXD A; AR sources</td>
                             <td>Fran</td>
-                            <td>Gareth (sign-off); AR sources replacement</td>
+                            <td><strong>Gareth.</strong> Sign-off within 48 hours of AR's replacement proposal. AR sources; Gareth signs off curriculum impact.</td>
                             <td>Nothing</td>
-                            <td>None</td>
+                            <td>None.</td>
                         </tr>
 
                         <tr style="background: var(--color-primary-subtle);">
-                            <td colspan="5" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Author lifecycle</td>
+                            <td colspan="6" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Author lifecycle (RACI-anchored — divergences flagged ⚠️)</td>
                         </tr>
                         <tr>
-                            <td><strong>Live pre-session briefing call (every author, every session)</strong></td>
-                            <td>Fran</td>
-                            <td>Written brief by default; live call only for new or sensitive authors</td>
-                            <td>The default-on live call</td>
-                            <td>Some authors will miss the live alignment. Risk concentrated on first-time / high-stakes sessions, which still get the call.</td>
+                            <td><strong>Mandatory live onboarding call (AR + LXD + Host)</strong></td>
+                            <td>RACI §1 GAP — Fran to create DNA</td>
+                            <td>Aspirational per RACI; Fran's DNA never built</td>
+                            <td><strong>Gareth</strong> attends first cohort with each new Mastery to create the DNA (one-time cost per program ≈ 2 days). After that, Host runs the call from the DNA template; Gareth attends only for Tier-1 authors (criteria documented in author tiering policy).</td>
+                            <td>Fran's intended LXD-led DNA build</td>
+                            <td>Gareth's curriculum hours absorb DNA design (~2 days per new Mastery launch). Tracked against curriculum capacity budget.</td>
                         </tr>
-                        <tr>
-                            <td><strong>Two-week pre-call briefing email</strong></td>
-                            <td>Fran (manual)</td>
-                            <td>AI-drafted from student progress data; AR reviews and sends</td>
-                            <td>Hand-written composition</td>
-                            <td>Email feels less personal. Consistency and on-time delivery go up.</td>
+                        <tr style="background: #fff8e1;">
+                            <td><strong>⚠️ Pre-session author briefing call (per session)</strong></td>
+                            <td>RACI §2 — LXD R/A (live call before every session)</td>
+                            <td>Fran — live call per session (often missed in practice)</td>
+                            <td>Written brief by default (template from row above). <strong>Live call exception only when:</strong> (a) author is in first cohort with Mindvalley, OR (b) session contains sensitive content — defined as: mental health, DEI, financial advice, medical claims. <strong>Gareth</strong> runs the live call when triggered; written brief otherwise sent by AR 14 days pre-session.</td>
+                            <td>Default-on live briefing</td>
+                            <td>Off-brief delivery from unfamiliar authors. Mitigation: clearer written template + AR compliance check at T-48h; trigger criteria reviewed quarterly.</td>
+                        </tr>
+                        <tr style="background: #fff8e1;">
+                            <td><strong>⚠️ Two-week pre-call briefing email</strong></td>
+                            <td>RACI §2 — LXD R/A (Fran to build template); CX/CS R</td>
+                            <td>Fran — manually composed per session; often misses 14-day window</td>
+                            <td><strong>AI-drafted</strong> from student progress data (Matt's tooling). <strong>AR (Marta)</strong> reviews and sends 14 days pre-session. SLA: emails sent &lt;12 days pre-session trigger an automatic flag to Jaideep.</td>
+                            <td>Manual composition</td>
+                            <td>Email feels less personal in tone. Acceptance: 14-day SLA + consistent format. <em>Fallback if AI tool fails:</em> AR composes manually using the brief template.</td>
                         </tr>
                         <tr>
                             <td><strong>Author pack checklist enforcement</strong></td>
+                            <td>RACI §2 — AR A, LXD R (definition)</td>
                             <td>Fran (informal chasing)</td>
-                            <td>AR via contract clause; AI tracks compliance</td>
+                            <td><strong>AR</strong> enforces via contract clause already drafted per 28 April RACI. AI tracks compliance against contractual deliverables. Non-compliance triggers: AR escalation at T-7 days, Eni/Jaideep at T-3.</td>
                             <td>Informal chasing</td>
-                            <td>Some authors push back on contractual rigour — escalate to AR/Jaideep.</td>
+                            <td>Some authors push back on contractual rigour. Escalation: AR → Eni → Jaideep, per RACI escalation chain.</td>
                         </tr>
-                        <tr>
-                            <td><strong>Mid-program author check-ins</strong></td>
-                            <td>Fran (curriculum-led)</td>
-                            <td>AR (relationship-led); Host flags content issues</td>
-                            <td>Curriculum-led mid-cohort calls</td>
-                            <td>Content nuance picked up later than today. Mitigated by Host being on every live session.</td>
+                        <tr style="background: #fff8e1;">
+                            <td><strong>⚠️ Mid-program author check-in</strong></td>
+                            <td>RACI §2 — AR R + LXD R + Host C (LXD specifically for content delivery quality)</td>
+                            <td>Fran + AR; Host consulted</td>
+                            <td><strong>AR R</strong> for relationship; <strong>Host R</strong> for content quality flags (Host already on every session). Cadence: Week N/2 of each cohort. <em>No LXD layer.</em></td>
+                            <td>LXD-led curriculum quality check-in</td>
+                            <td>Content quality issues surface ~1 week later than today. Mitigation: <strong>Host has direct escalation authority to Gareth on quality breaches</strong> — not gated through AR.</td>
                         </tr>
                         <tr>
                             <td><strong>Author replacement / rescheduling sourcing</strong></td>
-                            <td>Fran + AR</td>
-                            <td>AR (Gareth signs off curriculum impact)</td>
+                            <td>RACI §2 — AR R, LXD A</td>
+                            <td>AR + Fran</td>
+                            <td><strong>AR</strong> sources replacement within 5 working days; Gareth signs off curriculum impact (per Curriculum row 5). AR communicates to client within 48h of Gareth's sign-off.</td>
                             <td>Nothing — cleaner split</td>
-                            <td>None</td>
+                            <td>None.</td>
+                        </tr>
+                        <tr style="background: #fff8e1;">
+                            <td><strong>⚠️ Surfacing live issues during delivery</strong></td>
+                            <td>RACI §2 — Host R + LXD R, AR A</td>
+                            <td>Host + Fran flag; AR acts</td>
+                            <td><strong>Host R only; AR A.</strong> Host has direct escalation to Gareth on quality breaches (no AR gatekeeping for quality issues). RACI-defined breach types documented in Host playbook.</td>
+                            <td>LXD layer in live issue surfacing</td>
+                            <td>Quality breach signal slower by ~24h without LXD second pair of eyes. Mitigation: Host training updated to spot RACI-defined breach types; quarterly calibration with Gareth.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Speakers provide own slides / resources</strong></td>
+                            <td>RACI §2 — AR A; speakers accountable (agreed 28 April)</td>
+                            <td>Per RACI; CX/CS to stop creating workbooks</td>
+                            <td><strong>No change.</strong> AR enforces via contract; speakers deliver author pack (row above).</td>
+                            <td>CX/CS continuing to create workbooks</td>
+                            <td>None — strict adherence to RACI.</td>
                         </tr>
 
                         <tr style="background: var(--color-primary-subtle);">
-                            <td colspan="5" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Student experience &amp; NPS</td>
+                            <td colspan="6" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Post-program feedback (RACI §3)</td>
                         </tr>
                         <tr>
-                            <td><strong>Weekly student check-ins (every cohort)</strong></td>
-                            <td>Fran (currently inconsistent)</td>
-                            <td>CX/CS (Tom) with defined re-engagement plays</td>
-                            <td>Bespoke per-student creative outreach</td>
-                            <td>Less individual depth from a single LX voice. More consistency and broader coverage.</td>
+                            <td><strong>Session quality ratings (5 days pre-feedback call)</strong></td>
+                            <td>RACI §3 GAP — LXD R</td>
+                            <td>Fran (often late)</td>
+                            <td><strong>Gareth + Tom</strong> produce from AI-clustered NPS digest. Delivered to AR (Marta) 5 working days pre-call as RACI requires.</td>
+                            <td>Manual per-comment compilation</td>
+                            <td>Edge-case verbatims lumped. Mitigation: monthly review of AI clustering quality by Gareth.</td>
                         </tr>
-                        <tr>
-                            <td><strong>Re-engagement outreach for slipping students</strong></td>
-                            <td>Fran</td>
-                            <td>CX/CS (Tom) — defined plays</td>
-                            <td>Bespoke creative interventions</td>
-                            <td>Loses Fran's personal touch with at-risk students. Mitigated by plays being designed once by Gareth + Tom.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>NPS verbatim review &amp; root-cause</strong></td>
-                            <td>Fran (manual reading)</td>
-                            <td>AI-clustered weekly digest; Gareth + Tom review</td>
-                            <td>Per-comment manual reading</td>
-                            <td>Edge-case verbatims may get lumped together. Mitigated by reviewing the AI clustering quality monthly.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Visual feedback (Deep) pages for speakers</strong></td>
-                            <td>Fran (bespoke per author)</td>
-                            <td>Janja (template); AI drafts; Ops finalises</td>
+                        <tr style="background: #fff8e1;">
+                            <td><strong>⚠️ Visual feedback (Deep) pages for speakers</strong></td>
+                            <td>RACI §2 GAP — LXD R/A (agreed 28 April)</td>
+                            <td>Fran — bespoke per author, slow turnaround</td>
+                            <td><strong>Janja</strong> owns template + production workflow. <strong>AI</strong> drafts from session data. <strong>Ops</strong> finalises within 5 working days post-session. Author receives Deep page within 7 days.</td>
                             <td>Bespoke per-author production from scratch</td>
-                            <td>Less personalisation in the page. Faster turnaround.</td>
+                            <td>Less per-author personalisation. Mitigation: template includes 3 personalisation slots per author; Gareth reviews random sample monthly.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Post-delivery feedback call (AR-led, Deep page format)</strong></td>
+                            <td>RACI §3 — AR R/A (Marta)</td>
+                            <td>Marta (consulted on data from Fran)</td>
+                            <td><strong>Marta</strong> leads. Gareth, Host, CX/CS deliver data 5 working days pre-call (RACI cadence). No change.</td>
+                            <td>Nothing</td>
+                            <td>None.</td>
                         </tr>
 
                         <tr style="background: var(--color-primary-subtle);">
-                            <td colspan="5" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Compliance &amp; accreditation</td>
+                            <td colspan="6" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Student experience &amp; NPS (outside RACI — proposal-defined)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Weekly student check-ins (every active cohort)</strong></td>
+                            <td>Not in RACI</td>
+                            <td>Fran — inconsistent cadence, bespoke per student</td>
+                            <td><strong>CX/CS (Tom)</strong>. Weekly outreach via defined plays (re-engagement, completion nudge, NPS check). Coverage target: 100% of active students contacted per week. Plays designed once by Gareth + Tom.</td>
+                            <td>Bespoke per-student creative outreach</td>
+                            <td>Less individual depth from single LX voice. Mitigation: NPS verbatims (next row) catch outliers; Gareth reviews CX play library quarterly.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>NPS verbatim review &amp; root-cause clustering</strong></td>
+                            <td>Not in RACI</td>
+                            <td>Fran — manual reading, slow turnaround</td>
+                            <td><strong>AI-clustered weekly digest</strong> (Matt's tooling); <strong>Gareth + Tom</strong> review within 48h of delivery. Verbatims hitting 3+ same-theme threshold trigger CX action within 5 working days.</td>
+                            <td>Per-comment manual reading</td>
+                            <td>Edge cases lumped. Mitigation: monthly clustering quality review by Gareth.</td>
+                        </tr>
+
+                        <tr style="background: var(--color-primary-subtle);">
+                            <td colspan="6" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Compliance &amp; accreditation (outside RACI)</td>
                         </tr>
                         <tr>
                             <td><strong>Accreditation renewals (ICF / EMCC / CPD)</strong></td>
-                            <td>Fran (informal, memory-based)</td>
-                            <td>Janja with documented calendar + automated reminders</td>
+                            <td>Not in RACI</td>
+                            <td>Fran — informal calendar, memory-based</td>
+                            <td><strong>Janja</strong> owns calendar. Automated reminders at T-90, T-60, T-30 days pre-renewal. ICF: annual. EMCC: bi-annual. CPD: per cohort. Any milestone missed escalates to Jaideep automatically.</td>
                             <td>Memory-based tracking</td>
-                            <td><strong>Risk goes <em>down</em>.</strong> This is a strict upgrade — compliance lapse risk reduces.</td>
+                            <td><strong>Risk goes DOWN.</strong> Compliance lapse risk strictly reduced.</td>
                         </tr>
 
                         <tr style="background: var(--color-primary-subtle);">
-                            <td colspan="5" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Platform &amp; content operations (Celia's old scope)</td>
+                            <td colspan="6" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Platform &amp; content operations (Celia's old scope, outside RACI)</td>
                         </tr>
                         <tr>
                             <td><strong>Typeform assessment build &amp; maintenance</strong></td>
+                            <td>Not in RACI</td>
                             <td>Celia</td>
-                            <td>Janja (Anna backstop)</td>
-                            <td>Nothing — pure ownership transfer</td>
-                            <td>None</td>
+                            <td><strong>Janja</strong> owns build + ongoing maintenance. <strong>Anna</strong> backstops on capacity overflow. <strong>Gareth</strong> signs off assessment content (pass criteria, scope) per program.</td>
+                            <td>Nothing — ownership transfer</td>
+                            <td>None.</td>
                         </tr>
                         <tr>
                             <td><strong>Osiris IDs + Platform shell setup</strong></td>
+                            <td>Not in RACI</td>
                             <td>Celia</td>
-                            <td>Anna Francini <em>(vendor)</em></td>
-                            <td>Nothing — pure ownership transfer</td>
-                            <td>Vendor dependency for shell builds. Manageable; Janja can cover gaps.</td>
+                            <td><strong>Anna Francini</strong> <em>(vendor)</em>. Lead time: 10 working days pre-launch. Janja covers if Anna unavailable.</td>
+                            <td>Nothing — ownership transfer</td>
+                            <td>Vendor dependency. Mitigation: Janja as documented fallback; quarterly Anna scope review.</td>
                         </tr>
                         <tr>
                             <td><strong>Lesson population (Zoom links, schedule, feedback links)</strong></td>
+                            <td>Not in RACI</td>
                             <td>Celia</td>
-                            <td>Anna Francini</td>
-                            <td>Nothing — pure ownership transfer</td>
-                            <td>None</td>
+                            <td><strong>Anna Francini.</strong> Delivered 5 working days pre-cohort start.</td>
+                            <td>Nothing — ownership transfer</td>
+                            <td>None.</td>
                         </tr>
                         <tr>
                             <td><strong>Certificate delivery</strong></td>
-                            <td>Celia (manual)</td>
-                            <td>Janja — automated workflow</td>
+                            <td>Not in RACI</td>
+                            <td>Celia — manual, per learner</td>
+                            <td><strong>Janja</strong> — automated workflow (trigger: completion). Manual fallback within 48 hours of any automation breakage.</td>
                             <td>Manual generation per learner</td>
-                            <td>Automation breakage. Mitigated by monitoring + manual fallback.</td>
+                            <td>Automation breakage. Mitigation: Janja monitors weekly; documented manual fallback SLA.</td>
                         </tr>
                         <tr>
                             <td><strong>Summit recording uploads</strong></td>
+                            <td>Not in RACI</td>
                             <td>Celia (ad-hoc)</td>
-                            <td>Anna Francini</td>
-                            <td>Nothing — pure ownership transfer</td>
-                            <td>None</td>
+                            <td><strong>Anna Francini.</strong> Uploaded within 24 hours post-session.</td>
+                            <td>Nothing — ownership transfer</td>
+                            <td>None.</td>
+                        </tr>
+
+                        <tr style="background: var(--color-primary-subtle);">
+                            <td colspan="6" style="font-weight: 700; color: var(--color-primary-dark); text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;">Escalation protocol (RACI §2 GAP — Janja to document)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Escalation protocol documentation</strong></td>
+                            <td>RACI §2 GAP — Janja to document per 28 April agreement</td>
+                            <td>Per RACI agreement, undocumented</td>
+                            <td><strong>Janja</strong> documents within 30 days post-transition. Covers RACI-defined escalation types: budget, curriculum conflict, agreement violation, speaker under-delivery, author welfare. AR is first responder; Gareth consulted on curriculum issues per RACI.</td>
+                            <td>Ad-hoc escalation</td>
+                            <td>None — strict upgrade.</td>
                         </tr>
                     </tbody>
                 </table>
                 </div>
 
-                <p style="margin-top: 16px; font-size: 13px; color: var(--color-fg-muted);"><strong>Reading the table:</strong> rows marked <em>"None"</em> in the risk column are pure ownership transfers — the work continues exactly as it does today, just under a different name. Rows with a named risk are explicit trade-offs being made to keep this within existing headcount. None of these risks are catastrophic on their own; together they represent the cost of holding LX with the team we have rather than backfilling the LXM seat with a hire.</p>
+                <p style="margin-top: 16px; font-size: 13px; color: var(--color-fg-muted);"><strong>Reading the table.</strong> Rows shaded yellow with ⚠️ are where this proposal moves a responsibility the 28 April RACI places on LXD onto a different owner — those are the five negotiation points. Rows marked "None" in the risk column are pure ownership transfers; the work continues exactly as it does today under a different name. Rows with a named risk are explicit trade-offs accepted to keep this within existing headcount. None of these risks is catastrophic on its own; together they represent the cost of holding LX with the team we already have rather than backfilling Fran's seat with a hire.</p>
 
-                <p style="font-size: 13px; color: var(--color-fg-muted);"><strong>What's <em>not</em> on this list:</strong> curriculum architecture, methodology, brief design, and creative standard. Those are all protected — they stay with Gareth at the same quality bar Fran held.</p>
+                <h3>Where this proposal diverges from the 28 April RACI</h3>
+                <p>The RACI is the source of truth for the author lifecycle. This proposal aligns with most of it. Five items move the LXD responsibility somewhere else — these are the five conversations to have and approve explicitly:</p>
+
+                <div class="card highlight" style="background: linear-gradient(135deg, #fff8e1, #fff3e0); border-left: 4px solid #f9a825;">
+                    <h4 style="margin-top: 0;">1. Pre-session author briefing call (per session)</h4>
+                    <p><strong>RACI today:</strong> LXD R/A — live call before every session.</p>
+                    <p><strong>Proposed:</strong> Written brief by default. Live call only for first-cohort authors or sessions with sensitive content (mental health, DEI, financial advice, medical claims). Gareth runs the call when triggered.</p>
+                    <p><strong>Why:</strong> The live call is the safeguard against unclear briefs. A cleaner written template moves the safeguard upstream and frees the LXD-equivalent hours for architecture.</p>
+                    <p><strong>If you disagree:</strong> name the threshold (e.g. require live call for any author below Tier-2 rating) and we can adjust the trigger.</p>
+                </div>
+
+                <div class="card highlight" style="background: linear-gradient(135deg, #fff8e1, #fff3e0); border-left: 4px solid #f9a825;">
+                    <h4 style="margin-top: 0;">2. Two-week pre-call briefing email</h4>
+                    <p><strong>RACI today:</strong> LXD R/A (Fran to build the template); CX/CS R.</p>
+                    <p><strong>Proposed:</strong> AI-drafted from student progress data; AR (Marta) reviews and sends 14 days pre-session. Emails &lt;12 days pre-session flag automatically.</p>
+                    <p><strong>Why:</strong> AR already owns the author relationship. AI absorbs the drafting load. Cadence becomes enforced rather than aspirational.</p>
+                    <p><strong>If you disagree:</strong> name who else could review before send (e.g. Gareth reviews Tier-1 emails) and we can wire that in.</p>
+                </div>
+
+                <div class="card highlight" style="background: linear-gradient(135deg, #fff8e1, #fff3e0); border-left: 4px solid #f9a825;">
+                    <h4 style="margin-top: 0;">3. Mid-program author check-in</h4>
+                    <p><strong>RACI today:</strong> AR R + LXD R + Host C — both AR and LXD jointly responsible.</p>
+                    <p><strong>Proposed:</strong> AR-only for relationship; Host R for content quality flags. No LXD layer.</p>
+                    <p><strong>Why:</strong> Host is on every session and best-placed to flag content issues in real time. An LXD layer adds delay without adding signal.</p>
+                    <p><strong>If you disagree:</strong> Gareth can join Tier-1 mid-program check-ins; we'd need to define which authors qualify.</p>
+                </div>
+
+                <div class="card highlight" style="background: linear-gradient(135deg, #fff8e1, #fff3e0); border-left: 4px solid #f9a825;">
+                    <h4 style="margin-top: 0;">4. Surfacing live issues during delivery</h4>
+                    <p><strong>RACI today:</strong> Host R + LXD R, AR A.</p>
+                    <p><strong>Proposed:</strong> Host R only; AR A. Host has direct escalation to Gareth on quality breaches (no AR gatekeeping for quality).</p>
+                    <p><strong>Why:</strong> Host has eyes on every session. LXD layer adds delay. Direct Host→Gareth escalation preserves the safety valve.</p>
+                    <p><strong>If you disagree:</strong> we can specify a weekly Host-Gareth sync to surface drift earlier.</p>
+                </div>
+
+                <div class="card highlight" style="background: linear-gradient(135deg, #fff8e1, #fff3e0); border-left: 4px solid #f9a825;">
+                    <h4 style="margin-top: 0;">5. Visual feedback (Deep) pages for speakers</h4>
+                    <p><strong>RACI today:</strong> LXD R/A; AR C; Host I — agreed 28 April.</p>
+                    <p><strong>Proposed:</strong> Janja owns template + production workflow; AI drafts from session data; Ops finalises within 5 working days post-session. Author receives Deep page within 7 days.</p>
+                    <p><strong>Why:</strong> Deep page production is template-driven content ops, not curriculum judgment. Gareth reviews a random sample monthly to keep the quality bar.</p>
+                    <p><strong>If you disagree:</strong> Gareth can sign off every Tier-1 Deep page before it ships; would add 1–2 hours/week.</p>
+                </div>
+
+                <p style="font-size: 13px; color: var(--color-fg-muted);"><strong>Everything else in the RACI flows through unchanged.</strong> AR retains Marta and Marijana's full scope; Host retains Ileana's full scope; escalation chain unchanged; speaker accountability for materials unchanged; post-program feedback call structure unchanged.</p>
+
+                <h3>Acceptance criteria — what good looks like at 30 / 60 / 90 days</h3>
+                <p>To prevent this proposal from drifting into "we tried, didn't quite work, default back to Gareth absorbing it," here are the measurable checkpoints. Each is testable.</p>
+
+                <div class="card highlight">
+                    <h4 style="margin-top: 0;">30 days post-transition</h4>
+                    <ul>
+                        <li>Brief template version 1.0 published for current active Mastery; author compliance against the template &gt;90%.</li>
+                        <li>AI briefing email tool deployed (Matt's tooling). AR sending 14-day pre-call emails on schedule, with one cohort's emails sent under the new flow.</li>
+                        <li>Janja's accreditation calendar live with all ICF / EMCC / CPD renewal dates entered and reminders configured.</li>
+                        <li>Anna Francini onboarded; Osiris / Platform shell handover from Celia documentation complete.</li>
+                        <li>Matt Wong's Academy ops scope appearing on his Q3 OKRs (confirmed at director level with Jaideep).</li>
+                        <li>Author tiering policy drafted (defines who gets live calls, Tier-1 Deep page review, etc.).</li>
+                    </ul>
+                </div>
+
+                <div class="card highlight">
+                    <h4 style="margin-top: 0;">60 days</h4>
+                    <ul>
+                        <li>First full cohort completed under new structure. Program NPS at or above pre-transition baseline.</li>
+                        <li>NPS verbatim digest in production weekly; Gareth + Tom reviewing within 48h SLA.</li>
+                        <li>Janja's escalation protocol documented and circulated to AR, Host, CX/CS, and Gareth.</li>
+                        <li>CX/CS re-engagement plays running; weekly student contact at 100% target.</li>
+                        <li>Deep pages template + workflow producing pages within 7-day SLA.</li>
+                        <li>Gareth's weekly LX time tracked at ≤1 day in steady state via Matt's dashboard.</li>
+                    </ul>
+                </div>
+
+                <div class="card highlight">
+                    <h4 style="margin-top: 0;">90 days</h4>
+                    <ul>
+                        <li>Program NPS at or above baseline across all cohorts that ran under the new model.</li>
+                        <li>ICF / EMCC / CPD calendar tracking with zero missed milestones.</li>
+                        <li>Zero curriculum sign-offs missed against documented SLAs (5-day shortlist, 48h replacement).</li>
+                        <li>Live call exceptions tracked: &lt;10% of sessions triggered live calls (i.e. Tier-1 / sensitive content threshold holding).</li>
+                        <li>Retrospective scheduled with Jaideep, Vishen, Dario to evaluate the redistribution against this acceptance criteria and decide whether to formalize, adjust, or restructure.</li>
+                    </ul>
+                </div>
+
+                <p style="font-size: 13px; color: var(--color-fg-muted);"><strong>If any 60-day criterion misses, that's a signal — not a failure.</strong> The retrospective at day 90 is the moment to decide whether to invest in additional support (a part-time LX hire, broader AI tooling, etc.) rather than letting the gap quietly default back to the CD calendar.</p>
 
                 <h3>What I'm proposing we do next</h3>
                 <p>Two options, depending on your appetite:</p>
